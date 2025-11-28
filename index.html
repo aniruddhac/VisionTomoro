@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vantage.AI - Consulting and IT Services</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- Header with Navigation -->
   <header class="header">
@@ -13,18 +19,21 @@
       <div class="logo">
         <h1>Vantage.AI</h1>
       </div>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <nav class="navbar">
-        <ul class="nav-menu">
+        <ul class="nav-menu" id="navMenu">
           <li class="nav-item">
-            <a href="#" class="nav-link">AI & Data</a>
+            <a href="#" class="nav-link">AI</a>
             <ul class="dropdown">
-              <li><a href="#">AI/ML</a></li>
+              <li><a href="#">ML and Data Science</a></li>
               <li><a href="#">Gen AI</a></li>
               <li><a href="#">Agentic AI</a></li>
               <li><a href="#">Responsible AI</a></li>
-              <li><a href="#">Data Warehouse</a></li>
-              <li><a href="#">Data Lake & Lakehouse</a></li>
-              <li><a href="#">Data Architecture</a></li>
+              <li><a href="#">Data & Analytics</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -49,13 +58,13 @@
             <a href="#" class="nav-link">What we do</a>
             <ul class="dropdown">
               <li><a href="#">Digital Transformation</a></li>
-              <li><a href="#">Digital Engineering & Application Services</a></li>
+              <li><a href="#">Application Services</a></li>
               <li><a href="#">DevOps</a></li>
               <li><a href="#">Infra Automation</a></li>
               <li><a href="#">Program and Project Mgmt</a></li>
               <li><a href="#">Product Management</a></li>
               <li><a href="#">Product Engineering</a></li>
-              <li><a href="#">Quality Engineering</a></li>
+              <li><a href="#">GCC as a Service</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -124,12 +133,13 @@
           </div>
         </div>
         <div class="carousel-slide">
-            <div class="hero-content">
-              <h2>AI needs a new way of thinking and operating model</h2>
-              <p>AI is not just a technology. Getting the optimum business benefit from AI requires a new operating model and reinvention of business processes</p>
-              <a href="#" class="btn-primary">Get Started</a>
-            </div>
+          <div class="hero-content">
+            <h2>AI needs a new way of thinking and operating model</h2>
+            <p>AI is not just a technology. Getting the optimum business benefit from AI requires a new operating model
+              and reinvention of business processes</p>
+            <a href="#" class="btn-primary">Get Started</a>
           </div>
+        </div>
       </div>
       <div class="carousel-indicators">
         <button class="carousel-dot active" data-slide="0" aria-label="Slide 1"></button>
@@ -144,47 +154,65 @@
   <!-- Services Overview -->
   <section class="services">
     <div class="container">
-      <h2 class="section-title">Our Core Services</h2>
+      <h2 class="section-title teal-title">Our spotlight services</h2>
       <div class="services-grid">
         <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=200&h=200&fit=crop" alt="AI & Gen AI" class="service-icon">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=300&h=300&fit=crop" alt="AI & Gen AI"
+            class="service-icon">
           <h3>AI & Gen AI</h3>
           <p>Advanced AI and machine learning solutions to drive business intelligence and automation.</p>
         </div>
         <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=200&h=200&fit=crop" alt="Data & Analytics" class="service-icon">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=300&h=300&fit=crop"
+            alt="Data & Analytics" class="service-icon">
           <h3>Data & Analytics</h3>
           <p>Transform your data into actionable insights with modern data architecture and analytics.</p>
         </div>
         <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=200&h=200&fit=crop" alt="Cloud" class="service-icon">
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&h=300&fit=crop" alt="Cloud"
+            class="service-icon">
           <h3>Cloud</h3>
           <p>Seamless cloud migration and modernization to accelerate your digital transformation.</p>
         </div>
         <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=200&h=200&fit=crop" alt="Consulting" class="service-icon">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=300&fit=crop" alt="Consulting"
+            class="service-icon">
           <h3>Consulting</h3>
           <p>Strategic consulting services to help you navigate the digital landscape.</p>
         </div>
-        <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=200&h=200&fit=crop" alt="DevOps & Automation" class="service-icon">
-          <h3>DevOps & Automation</h3>
-          <p>Streamline your development and operations with automated CI/CD pipelines and infrastructure automation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Signature Strength Section -->
+  <section class="signature-strength-section">
+    <div class="container">
+      <h2 class="section-title">Our signature strength</h2>
+      <div class="strength-grid">
+        <div class="strength-card">
+          <h3>Consulting and product background</h3>
+          <p>Deep expertise in strategic consulting combined with hands-on product development experience to deliver
+            comprehensive solutions.</p>
         </div>
-        <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=200&h=200&fit=crop" alt="Digital Transformation" class="service-icon">
-          <h3>Digital Transformation</h3>
-          <p>Transform your business processes and operations with cutting-edge digital technologies and strategies.</p>
+        <div class="strength-card">
+          <h3>Unique delivery approach</h3>
+          <p>Agile methodologies blended with proven frameworks to ensure efficient, high-quality delivery tailored to
+            your business needs.</p>
         </div>
-        <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=200&h=200&fit=crop" alt="Application Services" class="service-icon">
-          <h3>Application Services</h3>
-          <p>Build, modernize, and maintain enterprise applications with scalable and robust solutions.</p>
+        <div class="strength-card">
+          <h3>Experience in US, Europe and APAC market</h3>
+          <p>Global presence with local expertise across major markets, understanding regional nuances and regulatory
+            requirements.</p>
         </div>
-        <div class="service-card">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=200&h=200&fit=crop" alt="Product Management" class="service-icon">
-          <h3>Product Management</h3>
-          <p>End-to-end product management services from strategy to execution and optimization.</p>
+        <div class="strength-card">
+          <h3>Sector understanding</h3>
+          <p>Industry-specific knowledge spanning banking, healthcare, retail, and more to address unique sector
+            challenges effectively.</p>
+        </div>
+        <div class="strength-card">
+          <h3>Focus on AI, cloud, data and emerging tech</h3>
+          <p>Cutting-edge capabilities in transformative technologies that drive innovation and competitive advantage
+            for our clients.</p>
         </div>
       </div>
     </div>
@@ -193,7 +221,7 @@
   <!-- Contact Us Form -->
   <section class="contact-section">
     <div class="container">
-      <h2 class="section-title">Contact Us</h2>
+      <h2 class="section-title teal-title">Get in touch with us</h2>
       <form class="contact-form" id="contact-form">
         <div class="form-row">
           <div class="form-group">
@@ -224,6 +252,11 @@
     </div>
   </section>
 
+  <!-- Floating Contact Button -->
+  <a href="#contact-form" class="floating-contact-btn" id="floatingContactBtn">
+    <span>Get in touch with us</span>
+  </a>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
@@ -233,5 +266,5 @@
 
   <script src="script.js"></script>
 </body>
-</html>
 
+</html>
