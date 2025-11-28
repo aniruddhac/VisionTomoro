@@ -1,0 +1,7 @@
+{
+  "files.autoOpen": {
+    "frontend.html": true,
+    "backend.js": true
+  },
+  "workbench.startupEditor": "none"
+} 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    #todo-list { margin-top: 1em; }
+    .todo-item { display: flex; align-items: center; margin-bottom: 0.5em; }
+    .todo-item.completed span { text-decoration: line-through; color: #888; }
+    button { margin-left: 0.5em; }
+  </style>
+</head>
+<body>
+  <h1>Todo App</h1>
+  <form id="todo-form">
+    <input type="text" id="todo-input" placeholder="Add a new todo" required />
+    <button type="submit">Add</button>
+  </form>
+  <div id="todo-list"></div>
+  <script>
+    const API_URL = 'http://localhost:3001/todos';
+    const todoList = document.getElementById('todo-list');
+    const todoForm = document.getElementById('todo-form');
+    const todoInput = document.getElementById('todo-input');
+
+    async function fetchTodos() {
+      const res = await fetch(API_URL);
+      const todos = await res.json();
+      renderTodos(todos);
+    }
+
+    function renderTodos(todos) {
+      todoList.innerHTML = '';
+      todos.forEach(todo => {
+        const div = document.createElement('div');
+        div.className = 'todo-item' + (todo.completed ? ' completed' : '');
+        const span = document.createElement('span');
+        span.textContent = todo.text;
+        div.appendChild(span);
+        const toggleBtn = document.createElement('button');
+        toggleBtn.textContent = todo.completed ? 'Undo' : 'Complete';
+        toggleBtn.onclick = () => updateTodo(todo.id, { completed: !todo.completed });
+        div.appendChild(toggleBtn);
+        const delBtn = document.createElement('button');
+        delBtn.textContent = 'Delete';
+        delBtn.onclick = () => deleteTodo(todo.id);
+        div.appendChild(delBtn);
+        todoList.appendChild(div);
+      });
+    }
+
+    todoForm.onsubmit = async (e) => {
+      e.preventDefault();
+      const text = todoInput.value.trim();
+      if (!text) return;
+      await fetch(API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text })
+      });
+      todoInput.value = '';
+      fetchTodos();
+    };
+
+    async function updateTodo(id, data) {
+      await fetch(`${API_URL}/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      fetchTodos();
+    }
+
+    async function deleteTodo(id) {
+      await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+      fetchTodos();
+    }
+
+    async function editTodo(id, text) {
+      await fetch(`${API_URL}/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text })
+      });
+    }
+
+    fetchTodos();
+  </script>
+</body>
+</html> 
