@@ -3,7 +3,7 @@ function loadNavigation() {
     const navHTML = `
     <div class="container">
       <div class="logo">
-        <a href="index.html" class="logo-link"><img src="images/Perpescent_logo-removebg-preview.png" alt="Perpescent" class="logo-image"></a>
+        <a href="index.html" class="logo-link"><img src="images/VisionTomoro-removebg-preview.png" alt="Perpescent" class="logo-image"></a>
       </div>
       <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
         <span></span>
