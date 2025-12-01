@@ -4,12 +4,35 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      const header = document.querySelector('.header');
+      const secondaryNav = document.querySelector('.secondary-nav');
+      const headerHeight = header ? header.offsetHeight : 0;
+      const navHeight = secondaryNav ? secondaryNav.offsetHeight : 0;
+      const offset = headerHeight + navHeight;
+      
+      const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
       });
     }
   });
+});
+
+// Adjust secondary nav sticky position based on header height
+document.addEventListener('DOMContentLoaded', function () {
+  const header = document.querySelector('.header');
+  const secondaryNav = document.querySelector('.secondary-nav');
+  
+  if (header && secondaryNav) {
+    function updateSecondaryNavPosition() {
+      const headerHeight = header.offsetHeight;
+      secondaryNav.style.top = headerHeight + 'px';
+    }
+    
+    updateSecondaryNavPosition();
+    window.addEventListener('resize', updateSecondaryNavPosition);
+  }
 });
 
 // Mobile menu toggle (if needed for future enhancement)
@@ -56,6 +79,8 @@ document.addEventListener('DOMContentLoaded', function () {
         lastName: document.getElementById('lastName').value,
         email: document.getElementById('email').value,
         mobile: document.getElementById('mobile').value,
+        company: document.getElementById('company').value,
+        jobTitle: document.getElementById('jobTitle').value,
         message: document.getElementById('message').value
       };
 
@@ -132,6 +157,24 @@ document.addEventListener('DOMContentLoaded', function () {
     showSlide(currentSlide);
     startCarousel();
   }
+
+  // Cloud Continuum Tabs
+  const cloudTabBtns = document.querySelectorAll('.cloud-tab-btn');
+  const cloudTabPanels = document.querySelectorAll('.cloud-tab-panel');
+
+  cloudTabBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const targetTab = this.getAttribute('data-tab');
+
+      // Remove active class from all buttons and panels
+      cloudTabBtns.forEach(b => b.classList.remove('active'));
+      cloudTabPanels.forEach(p => p.classList.remove('active'));
+
+      // Add active class to clicked button and corresponding panel
+      this.classList.add('active');
+      document.getElementById(targetTab).classList.add('active');
+    });
+  });
 
   // Mobile menu toggle
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
