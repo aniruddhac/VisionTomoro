@@ -892,7 +892,8 @@ body {
 
 /* Cloud Page Styles */
 .page-hero {
-  background: linear-gradient(135deg, #008080 0%, #4a90e2 100%);
+  /* Match the home page hero gradient for visual consistency */
+  background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
   color: #fff;
   padding: 4rem 2rem;
   text-align: center;

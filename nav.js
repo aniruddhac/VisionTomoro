@@ -25,10 +25,9 @@ function loadNavigation() {
             <a href="#" class="nav-link has-dropdown">Consulting</a>
             <ul class="dropdown">
               <li><a href="#">Strategy Consulting</a></li>
-              <li><a href="#">AI and Data Strategy</a></li>
-              <li><a href="#">AI Readiness Assessment</a></li>
+              <li><a href="#">AI Strategy and Readiness Assessment</a></li>
               <li><a href="#">Technology Consulting</a></li>
-              <li><a href="#">Cloud Strategy and Assessment</a></li>
+              <li><a href="#">Architecture Consulting</a></li>
               <li><a href="#">Digital Strategy and Assessment</a></li>
               <li><a href="#">GCC as a Service</a></li>
             </ul>
@@ -39,7 +38,7 @@ function loadNavigation() {
               <li><a href="cloud.html">Cloud</a></li>
               <li><a href="#">Digital Transformation</a></li>
               <li><a href="#">Application Services</a></li>
-              <li><a href="#">DevOps and Infra Automation</a></li>
+              <li><a href="devops-infra-automation.html">DevOps and Infra Automation</a></li>
               <li><a href="#">Modernization and Portfolio Rationalization</a></li>
               <li><a href="#">Microsoft Technologies</a></li>
               <li><a href="#">Program and Project Mgmt</a></li>
