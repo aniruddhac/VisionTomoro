@@ -1,0 +1,11 @@
+# robots.txt for VisionTomoro
+# Allow all bots to crawl the site, but explicitly reference the sitemap and restrict the dev/test page
+
+User-agent: *
+Allow: /
+
+# Exclude local/dev test page
+Disallow: /frontend.html
+
+# Sitemap location (update to full URL in production, e.g. https://visiontomoro.com/sitemap.xml)
+Sitemap: /sitemap.xml
