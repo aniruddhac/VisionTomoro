@@ -1185,6 +1185,18 @@ body {
   margin-bottom: 1rem;
 }
 
+/* Short bios for leaders — smaller, muted and italic to visually separate from titles */
+.leader-bio {
+  font-size: 0.95rem;
+  color: #6b7280; /* muted gray */
+  font-style: italic;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  max-width: 44ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .linkedin-link {
   display: inline-flex;
   align-items: center;
