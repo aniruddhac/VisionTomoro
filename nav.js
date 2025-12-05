@@ -13,7 +13,7 @@ function loadNavigation() {
       <nav class="navbar">
         <ul class="nav-menu" id="navMenu">
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">AI</a>
+            <a href="#" class="nav-link has-dropdown">AI & Data<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li><a href="#">ML and Data Science</a></li>
               <li><a href="generative-ai.html">Generative AI</a></li>
@@ -24,7 +24,7 @@ function loadNavigation() {
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">Consulting</a>
+            <a href="#" class="nav-link has-dropdown">Consulting<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li><a href="#">Strategy Consulting</a></li>
               <li><a href="#">AI Strategy and Readiness Assessment</a></li>
@@ -35,7 +35,7 @@ function loadNavigation() {
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">What we do</a>
+            <a href="#" class="nav-link has-dropdown">Digital<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li><a href="cloud.html">Cloud</a></li>
               <li><a href="#">Digital Transformation</a></li>
@@ -50,7 +50,7 @@ function loadNavigation() {
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">Industries we serve</a>
+            <a href="#" class="nav-link has-dropdown">Industries<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li><a href="#">Banking and Financial Services</a></li>
               <li><a href="#">Insurance</a></li>
@@ -64,7 +64,7 @@ function loadNavigation() {
             <a href="what-we-think.html" class="nav-link">What we think</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">Who we are</a>
+            <a href="#" class="nav-link has-dropdown">Who we are<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li><a href="our-story.html">Our story</a></li>
               <li><a href="our-leaders.html">Our leaders</a></li>
