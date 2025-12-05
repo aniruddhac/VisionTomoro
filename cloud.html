@@ -20,6 +20,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="trending.css">
   <script src="nav.js"></script>
 </head>
 
@@ -356,21 +357,107 @@
   <section id="whats-trending" class="cloud-section">
     <div class="container">
       <h2 class="section-title">What's trending</h2>
-      <div class="offerings-grid">
-        <div class="offering-card">
-          <ul>
-            <li>Upcoming DevOps workshop — schedule announced soon</li>
-            <li>New Terraform IaC module library (beta)</li>
-            <li>Platform engineering whitepaper — publishing soon</li>
-            <li>GitOps onboarding kit for teams</li>
-            <li>Security-as-code patterns for pipelines</li>
-            <li>New demo: Canary deployments using feature flags</li>
-            <li>Automation health-check toolkit</li>
-            <li>Cloud cost optimizations for CI workloads</li>
-            <li>Expanded Kubernetes GitOps templates (coming)</li>
-            <li>Observability baseline guides for SRE teams</li>
-          </ul>
-        </div>
+      <div class="trending-grid">
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h3l3 8 7-20 3 12h3" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">Hyperscalers focus on making their own chip</h3>
+            <p class="trend-excerpt">Schedule announced soon.</p>
+          </div>
+        </article>
+
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h18" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">Rise of Sovereign Cloud</h3>
+            <p class="trend-excerpt">New module library (beta) for faster infra provisioning.</p>
+          </div>
+        </article>
+
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#0f172a" stroke-width="1.6"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">AI data centers</h3>
+            <p class="trend-excerpt">Hyperscalers focus on building large AI data centers</p>
+          </div>
+        </article>
+
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h10M4 18h7" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">AWS Launches multicloud networking advancements</h3>
+            <p class="trend-excerpt">AWS and Google Cloud collaborate to simplify multicloud networking</p>
+          </div>
+        </article>
+
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#0f172a" stroke-width="1.6"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">Azure Boost</h3>
+            <p class="trend-excerpt">Reusable patterns to bake security into CI/CD pipelines.</p>
+          </div>
+        </article>
+
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7h18M3 12h12M3 17h6" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">Non hyperscaler cloud providers</h3>
+            <p class="trend-excerpt">Non hyperscaler cloud providers (DigitalOcean) gaining adoption</p>
+          </div>
+        </article>
+
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2v20M2 12h20" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">Platform engineering gains widespread adoption</h3>
+            <p class="trend-excerpt">Toolkit to evaluate infra and pipeline automation health.</p>
+          </div>
+        </article>
+
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 12h10" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">Azure AI driven cloud transformation</h3>
+            <p class="trend-excerpt">Azure announces AI driven cloud migration and modernization services</p>
+          </div>
+        </article>
+
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12h18" stroke="#0f172a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">Kubernetes GitOps templates</h3>
+            <p class="trend-excerpt">Expanded templates for common cluster and app patterns.</p>
+          </div>
+        </article>
+
+        <article class="trend-card">
+          <div class="trend-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="#0f172a" stroke-width="1.6"/></svg>
+          </div>
+          <div class="trend-content">
+            <h3 class="trend-title">Observability baseline guides</h3>
+            <p class="trend-excerpt">Guides to set a baseline for SRE and monitoring practices.</p>
+          </div>
+        </article>
+
       </div>
     </div>
   </section>

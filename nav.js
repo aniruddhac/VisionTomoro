@@ -16,7 +16,9 @@ function loadNavigation() {
             <a href="#" class="nav-link has-dropdown">AI</a>
             <ul class="dropdown">
               <li><a href="#">ML and Data Science</a></li>
-              <li><a href="gen-ai-agentic-ai.html">Gen AI and Agentic AI</a></li>
+              <li><a href="generative-ai.html">Generative AI</a></li>
+              <li><a href="agentic-ai.html">Agentic AI</a></li>
+              <li><a href="vibe-coding-as-a-service.html">Vibe Coding as a Service</a></li>
               <li><a href="#">Responsible AI</a></li>
               <li><a href="data-analytics.html">Data and Analytics</a></li>
             </ul>

@@ -17,9 +17,19 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/gen-ai-agentic-ai.html</loc>
+    <loc>/generative-ai.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>/agentic-ai.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>/vibe-coding-as-a-service.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>/devops-infra-automation.html</loc>
