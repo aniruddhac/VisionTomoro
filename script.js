@@ -128,6 +128,12 @@ document.addEventListener('DOMContentLoaded', function () {
     showSlide(nextIndex);
   }
 
+  // Function to go to previous slide
+  function prevSlide() {
+    const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(prevIndex);
+  }
+
   // Auto-advance carousel every 10 seconds
   function startCarousel() {
     carouselInterval = setInterval(nextSlide, 10000);
@@ -151,6 +157,24 @@ document.addEventListener('DOMContentLoaded', function () {
       restartCarousel();
     });
   });
+
+  // Event listeners for arrow navigation
+  const prevArrow = document.querySelector('.carousel-arrow-left');
+  const nextArrow = document.querySelector('.carousel-arrow-right');
+
+  if (prevArrow) {
+    prevArrow.addEventListener('click', function () {
+      prevSlide();
+      restartCarousel();
+    });
+  }
+
+  if (nextArrow) {
+    nextArrow.addEventListener('click', function () {
+      nextSlide();
+      restartCarousel();
+    });
+  }
 
   // Initialize carousel
   if (slides.length > 0) {

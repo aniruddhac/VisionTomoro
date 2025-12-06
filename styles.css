@@ -21,7 +21,7 @@ body {
 .header {
   background-color: #1a1a2e;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -183,21 +183,21 @@ body {
 
 .secondary-nav-cloud-label {
   display: block;
-  padding: 1rem 0;
+  padding: 0.7rem 0;
   color: #4a90e2;
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
   cursor: default;
 }
 
 .secondary-nav-link {
   display: block;
-  padding: 1rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   color: #1a1a2e;
   text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 0.85rem;
+  font-weight: 400;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-bottom: 3px solid transparent;
   white-space: nowrap;
@@ -358,6 +358,65 @@ body {
   display: flex;
   gap: 10px;
   z-index: 10;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.carousel-arrow:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-arrow svg {
+  color: white;
+  width: 24px;
+  height: 24px;
+}
+
+.carousel-arrow-left {
+  left: 20px;
+}
+
+.carousel-arrow-right {
+  right: 20px;
+}
+
+/* Mobile responsiveness for arrows */
+@media (max-width: 768px) {
+  .carousel-arrow {
+    width: 50px;
+    height: 50px;
+  }
+
+  .carousel-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .carousel-arrow-left {
+    left: 10px;
+  }
+
+  .carousel-arrow-right {
+    right: 10px;
+  }
 }
 
 .carousel-dot {
@@ -553,7 +612,7 @@ body {
 /* Cloud Continuum Section */
 .cloud-continuum-section {
   padding: 4rem 2rem;
-  background-color: #2d3748;
+  background-color: #181717;
 }
 
 .cloud-continuum-section .section-title {
@@ -659,7 +718,7 @@ body {
 /* Experience of our team Section */
 .experience-section {
   padding: 4rem 2rem;
-  background-color: #2d3748;
+  background-color: #181717;
 }
 
 .experience-section .section-title {
@@ -1087,7 +1146,7 @@ body {
 /* Signature Strength Section */
 .signature-strength-section {
   padding: 4rem 2rem;
-  background-color: #2d3748;
+  background-color: #181717;
 }
 
 .signature-strength-section .section-title {
@@ -1185,6 +1244,23 @@ body {
   background-color: #fff;
 }
 
+.services-image-container {
+  text-align: center;
+  margin: 2rem 0 3rem 0;
+}
+
+.services-overview-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.services-overview-image:hover {
+  transform: scale(1.02);
+}
+
 .leaders-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1234,19 +1310,21 @@ body {
 .leader-title {
   font-size: 1rem;
   color: #666;
+  font-weight: bold;
   margin-bottom: 1rem;
 }
 
-/* Short bios for leaders — smaller, muted and italic to visually separate from titles */
+/* Short bios for leaders — smaller, muted to visually separate from titles */
 .leader-bio {
   font-size: 0.95rem;
   color: #6b7280; /* muted gray */
-  font-style: italic;
+  font-style: normal;
   margin-bottom: 1rem;
   line-height: 1.4;
   max-width: 44ch;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: left;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .linkedin-link {
@@ -1492,12 +1570,12 @@ body {
   }
 
   .secondary-nav-cloud-label {
-    padding: 0.75rem 0;
+    padding: 0.525rem 0;
     font-size: 0.9rem;
   }
 
   .secondary-nav-link {
-    padding: 0.75rem 1rem;
+    padding: 0.525rem 1rem;
     font-size: 0.85rem;
     border-bottom: none;
     border-right: 1px solid #d1d5db;
