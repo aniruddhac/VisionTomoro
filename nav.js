@@ -13,7 +13,7 @@ function loadNavigation() {
       <nav class="navbar">
         <ul class="nav-menu" id="navMenu">
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">AI & Data<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="#" class="nav-link has-dropdown">AI<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li><a href="agentic-ai.html">Agentic AI</a></li>
               <li><a href="generative-ai.html">Generative AI</a></li>
@@ -52,12 +52,13 @@ function loadNavigation() {
           <li class="nav-item">
             <a href="#" class="nav-link has-dropdown">Industries<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
-              <li><a href="#">Banking and Financial Services</a></li>
-              <li><a href="#">Insurance</a></li>
               <li><a href="#">Healthcare and Life Sciences</a></li>
               <li><a href="#">Retail and CPG</a></li>
+              <li><a href="#">Insurance</a></li>
+              <li><a href="#">Banking and Financial Services</a></li>
+              <li><a href="#">Utilities and Energy</a></li>
               <li><a href="#">Travel and Hospitality</a></li>
-              <li><a href="#">Oil and Energy</a></li>
+              <li><a href="#">Govt. and Public Service</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -68,7 +69,7 @@ function loadNavigation() {
             <ul class="dropdown">
               <li><a href="our-story.html">Our story</a></li>
               <li><a href="our-leaders.html">Our leaders</a></li>
-              <li><a href="#">Get in touch</a></li>
+              <li><a href="get-in-touch.html">Get in touch</a></li>
             </ul>
           </li>
         </ul>
