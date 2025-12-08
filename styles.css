@@ -1470,7 +1470,8 @@ body {
 /* Short bios for leaders — smaller, muted to visually separate from titles */
 .leader-bio {
   font-size: 0.95rem;
-  color: #6b7280; /* muted gray */
+  color: #6b7280;
+  /* muted gray */
   font-style: normal;
   margin-bottom: 1rem;
   line-height: 1.4;
@@ -1702,24 +1703,43 @@ body {
 
   .secondary-nav {
     position: sticky;
-    top: auto;
-    overflow-x: visible;
+    top: 60px;
+    /* Adjusted for typical mobile header height */
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .secondary-nav::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
   }
 
   .secondary-nav-menu {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: flex-start;
+    padding: 0;
+    width: max-content;
   }
 
   .secondary-nav-item {
     width: auto;
     border-bottom: none;
+    flex-shrink: 0;
   }
 
   .secondary-nav-label {
-    padding: 0.75rem 1rem 0.75rem 0;
-    border-right: 1px solid #9ca3af;
+    padding: 0.75rem 1rem;
+    border-right: 1px solid #d1d5db;
+    position: sticky;
+    left: 0;
+    background-color: #e5e7eb;
+    z-index: 5;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
   }
 
   .secondary-nav-cloud-label {
@@ -1728,10 +1748,12 @@ body {
   }
 
   .secondary-nav-link {
-    padding: 0.3rem 1rem;
+    padding: 0.75rem 1rem;
     font-size: 0.85rem;
-    border-bottom: none;
-    border-right: 1px solid #d1d5db;
+    border-bottom: 3px solid transparent;
+    /* Maintain hover effect space */
+    border-right: none;
+    display: block;
   }
 
   .secondary-nav-link:last-child {
@@ -1776,8 +1798,8 @@ body {
   }
 
   .carousel-container {
-    height: auto;
-    min-height: 400px;
+    height: 90vh;
+    min-height: 600px;
   }
 
   .carousel-slide {
