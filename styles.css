@@ -1391,6 +1391,234 @@ body {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
+/* DNA Helix Timeline (Core Values) */
+.dna-timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem 0;
+}
+
+/* Central Line */
+.dna-timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: linear-gradient(180deg, #008080 0%, #8F63F1 100%);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.dna-item {
+  position: relative;
+  margin-bottom: 2rem;
+  width: 50%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.dna-item:nth-child(odd) {
+  left: 0;
+  text-align: right;
+}
+
+.dna-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+/* Connecting Dots */
+.dna-dot {
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 4px solid #4a90e2;
+  border-radius: 50%;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.dna-item:nth-child(odd) .dna-dot {
+  right: -10px;
+  /* Half of dot width (20px) to center on line */
+}
+
+.dna-item:nth-child(even) .dna-dot {
+  left: -10px;
+}
+
+.dna-item:hover .dna-dot {
+  background-color: #4a90e2;
+  transform: scale(1.2);
+}
+
+/* Content Cards */
+.dna-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dna-item:hover .dna-content {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-color: #4a90e2;
+}
+
+.dna-number {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #8F63F1;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dna-text {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Mobile Responsive For DNA Timeline */
+@media (max-width: 768px) {
+  .dna-timeline::before {
+    left: 20px;
+    /* Move line to left */
+  }
+
+  .dna-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left !important;
+    /* Force left align */
+  }
+
+  .dna-item:nth-child(even) {
+    left: 0;
+    /* Reset left position */
+  }
+
+  .dna-item:nth-child(odd) .dna-dot,
+  .dna-item:nth-child(even) .dna-dot {
+    left: 10px;
+    /* Center on the new line position (20px - 10px) */
+    right: auto;
+  }
+}
+
+.vision-mission-hero {
+  background-image: url('images/road-clear-sky-desert-mountains.jpg');
+  /* Using an existing high-quality image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  /* Parallax effect */
+  padding: 6rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.vision-mission-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Overlay to ensure text readability */
+  z-index: 1;
+}
+
+#services-overview {
+  background-image: url('images/1.2-Management-consulting.jpg');
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 3rem;
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  color: #fff;
+  z-index: 2;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.glass-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #fff 0%, #4a90e2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.glass-card p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.glass-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.glass-card ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: start;
+  gap: 0.75rem;
+  font-size: 1.05rem;
+}
+
+.glass-card ul li:last-child {
+  border-bottom: none;
+}
+
+.glass-card ul li::before {
+  content: '✦';
+  color: #4a90e2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .vision-mission-hero {
+    padding: 4rem 1rem;
+  }
+}
+
 /* Our Leaders Section */
 .leaders-section {
   padding: 4rem 2rem;
