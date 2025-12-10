@@ -1,9 +1,11 @@
 // Shared navigation menu for all pages
 function loadNavigation() {
-    const navHTML = `
+  const navHTML = `
     <div class="container">
       <div class="logo">
-        <a href="index.html" class="logo-link"><img src="images/VisionTomoro-removebg-preview.png" alt="VisionTomoro" class="logo-image"></a>
+        <a href="index.html" class="logo-link">
+          <img src="images/VisionTomoro-removebg-preview.png" alt="VisionTomoro" class="logo-image">
+        </a>
       </div>
       <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
         <span></span>
@@ -77,15 +79,15 @@ function loadNavigation() {
     </div>
   `;
 
-    const header = document.querySelector('.header');
-    if (header) {
-        header.innerHTML = navHTML;
-    }
+  const header = document.querySelector('.header');
+  if (header) {
+    header.innerHTML = navHTML;
+  }
 }
 
 // Load navigation when DOM is ready
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', loadNavigation);
+  document.addEventListener('DOMContentLoaded', loadNavigation);
 } else {
-    loadNavigation();
+  loadNavigation();
 }
