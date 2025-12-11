@@ -1472,6 +1472,179 @@ body {
   }
 }
 
+/* Consulting Content Styling */
+.consulting-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.consulting-content p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: inherit;
+}
+
+.consulting-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.consulting-list li {
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid #008080;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
+
+.cloud-section .consulting-list li {
+  background: rgba(0, 128, 128, 0.05);
+  color: #333;
+}
+
+.cloud-continuum-section .consulting-list li {
+  background: rgba(255, 255, 255, 0.08);
+  color: #cbd5e0;
+  border-left-color: #4a90e2;
+}
+
+.consulting-list li:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(0, 128, 128, 0.15);
+}
+
+.cloud-continuum-section .consulting-list li:hover {
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.2);
+}
+
+/* Value Proposition Section */
+.value-prop-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.value-prop-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.value-prop-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.value-prop-content {
+  text-align: left;
+}
+
+.value-prop-content .section-title {
+  text-align: left;
+}
+
+/* Engagement Models Grid */
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.engagement-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #f0f1f3 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e9ecef;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.engagement-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.engagement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 128, 128, 0.2);
+  border-color: #008080;
+}
+
+.engagement-card:hover::before {
+  opacity: 0.05;
+}
+
+.engagement-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.engagement-card:hover .engagement-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.engagement-card h3 {
+  font-size: 1.1rem;
+  color: #1a1a2e;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.engagement-card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.engagement-card:hover h3 {
+  color: #008080;
+}
+
+.engagement-card:hover p {
+  color: #555;
+}
+
 /* Signature Strength Section */
 .signature-strength-section {
   padding: 4rem 2rem;
@@ -2620,4 +2793,46 @@ body {
 
 .pipeline-item:nth-child(even):hover .pipeline-card {
   transform: translateY(5px);
+}
+
+
+/* Best Practices Section Styling */
+.best-practices-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.best-practices-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.best-practices-list li {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
+  border-left: 4px solid #008080;
+  color: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+  padding-left: 3.5rem;
+}
+
+.best-practices-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.best-practices-list li:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 12px rgba(0, 128, 128, 0.3);
 }

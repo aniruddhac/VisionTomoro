@@ -20,7 +20,7 @@ function loadNavigation() {
               <li><a href="agentic-ai.html">Agentic AI</a></li>
               <li><a href="generative-ai.html">Generative AI</a></li>
               <li><a href="#">Responsible AI</a></li>
-              <li><a href="vibe-coding-agentic-devops.html">Vibe Coning & Agentic DevOps</a></li>
+              <li><a href="vibe-coding-agentic-devops.html">Vibe Coding & Agentic DevOps</a></li>
               <li><a href="#">ML and Data Science</a></li>
               <li><a href="data-analytics.html">Data and Analytics</a></li>
             </ul>
@@ -28,12 +28,12 @@ function loadNavigation() {
           <li class="nav-item">
             <a href="#" class="nav-link has-dropdown">Consulting<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
-              <li><a href="#">Strategy Consulting</a></li>
-              <li><a href="#">AI Strategy and Readiness Assessment</a></li>
-              <li><a href="#">Technology Consulting</a></li>
-              <li><a href="#">Architecture Consulting</a></li>
-              <li><a href="#">Digital Strategy and Assessment</a></li>
-              <li><a href="#">GCC as a Service</a></li>
+              <li><a href="consulting.html#strategy-consulting">Strategy Consulting</a></li>
+              <li><a href="consulting.html#ai-strategy">AI Strategy and Readiness Assessment</a></li>
+              <li><a href="consulting.html#technology-consulting">Technology Consulting</a></li>
+              <li><a href="consulting.html#architecture-consulting">Architecture Consulting</a></li>
+              <li><a href="consulting.html#digital-strategy">Digital Strategy and Assessment</a></li>
+              <li><a href="consulting.html#gcc-service">GCC as a Service</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -41,14 +41,13 @@ function loadNavigation() {
             <ul class="dropdown">
               <li><a href="cloud.html">Cloud</a></li>
               <li><a href="#">Digital Transformation</a></li>
-              <li><a href="#">Application Services</a></li>
+              <li><a href="application-services.html">Application Services</a></li>
               <li><a href="devops-infra-automation.html">DevOps and Infra Automation</a></li>
               <li><a href="#">Modernization and Portfolio Rationalization</a></li>
-              <li><a href="#">Microsoft Technologies</a></li>
-              <li><a href="#">Program and Project Mgmt</a></li>
+              <li><a href="microsoft-technologies.html">Microsoft Technologies</a></li>
               <li><a href="#">Product and Platforms</a></li>
               <li><a href="#">Enterprise Architecture</a></li>
-              <li><a href="#">Emerging Technologies</a></li>
+              <li><a href="emerging-technologies.html">Emerging Technologies</a></li>
             </ul>
           </li>
           <li class="nav-item">
