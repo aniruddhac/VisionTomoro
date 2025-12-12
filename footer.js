@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
             <a href="our-leaders.html">About our leaders</a>
             <span class="footer-separator">|</span>
             <a href="get-in-touch.html">Contact Us</a>
+            <span class="footer-separator">|</span>
+            <a href="sitemap.html">Sitemap</a>
           </div>
           <p class="footer-copyright">&copy; 2025-26 VisionTomoro. All rights reserved.</p>
         </div>

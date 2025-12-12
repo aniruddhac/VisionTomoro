@@ -8,4 +8,4 @@ Allow: /
 Disallow: /frontend.html
 
 # Sitemap location (update to full URL in production, e.g. https://visiontomoro.com/sitemap.xml)
-Sitemap: /sitemap.xml
+Sitemap: https://www.visiontomoro.com/sitemap.xml
