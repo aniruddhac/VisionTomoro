@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Update the <loc> values to your production domain if you have one (e.g. https://visiontomoro.com) -->
   <url>
-    <loc>/index.html</loc>
+    <loc>https://www.visiontomoro.com/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>/cloud.html</loc>
+    <loc>https://www.visiontomoro.com/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.visiontomoro.com/cloud.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/data-analytics.html</loc>
+    <loc>https://www.visiontomoro.com/data-analytics.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/generative-ai.html</loc>
+    <loc>https://www.visiontomoro.com/generative-ai.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>/agentic-ai.html</loc>
+    <loc>https://www.visiontomoro.com/agentic-ai.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>/vibe-coding-as-a-service.html</loc>
+    <loc>https://www.visiontomoro.com/vibe-coding-as-a-service.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>/devops-infra-automation.html</loc>
+    <loc>https://www.visiontomoro.com/devops-infra-automation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>/our-leaders.html</loc>
+    <loc>https://www.visiontomoro.com/our-leaders.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>/our-story.html</loc>
+    <loc>https://www.visiontomoro.com/our-story.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>/frontend.html</loc>
+    <loc>https://www.visiontomoro.com/frontend.html</loc>
     <changefreq>never</changefreq>
     <priority>0.1</priority>
   </url>

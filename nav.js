@@ -23,6 +23,7 @@ function loadNavigation() {
               <li><a href="vibe-coding-agentic-devops.html">Vibe Coding & Agentic DevOps</a></li>
               <li><a href="#">ML and Data Science</a></li>
               <li><a href="data-analytics.html">Data and Analytics</a></li>
+              <li><a href="llm-ml-data-agent-ops.html">LLM/ML/Data/Agent Ops</a></li>
             </ul>
           </li>
           <li class="nav-item">

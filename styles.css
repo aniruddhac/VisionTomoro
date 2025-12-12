@@ -1152,9 +1152,45 @@ body {
   background-color: #1a1a2e;
   color: #fff;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   margin-top: 4rem;
   font-size: 0.85rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #4a90e2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-separator {
+  color: #cbd5e0;
+  margin: 0 0.5rem;
+}
+
+.footer-copyright {
+  margin: 0;
+  color: #cbd5e0;
 }
 
 /* Cloud Page Styles */
@@ -1363,6 +1399,29 @@ body {
   background: linear-gradient(135deg, #ffd21e 0%, #f59e0b 100%);
 }
 
+.panel-mlflow {
+  background: linear-gradient(135deg, #0194E2 0%, #003D82 100%);
+}
+
+.panel-langsmith {
+  background: linear-gradient(135deg, #1c3c3c 0%, #2e8b57 100%);
+}
+
+.panel-wandb {
+  background: linear-gradient(135deg, #FBBC04 0%, #F57C00 100%);
+}
+
+.panel-hyperscaler {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.panel-agent-frameworks {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.panel-kubeflow {
+  background: linear-gradient(135deg, #4B8BBE 0%, #306998 100%);
+}
 
 .tech-header {
   position: absolute;
@@ -1753,6 +1812,51 @@ body {
   color: #cbd5e0;
   line-height: 1.8;
   font-size: 0.95rem;
+}
+
+/* Download Section */
+.download-section-wrapper {
+  background-color: #f8f9fa;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-section-wrapper .container {
+  display: flex;
+  justify-content: center;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 128, 128, 0.3);
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 128, 128, 0.4);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+.download-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* Mobile Menu Toggle */
