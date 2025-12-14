@@ -1263,12 +1263,14 @@ body {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .page-hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 .page-hero p {
@@ -2672,6 +2674,7 @@ body {
 
   .page-hero h1 {
     font-size: 2rem;
+    line-height: 1.2;
   }
 
   .page-hero p {
@@ -2771,6 +2774,7 @@ body {
 
   .hero-content-right h1 {
     font-size: 1.8rem;
+    line-height: 1.2;
   }
 
   .hero-image-left img {
@@ -2787,6 +2791,7 @@ body {
 
   .hero-content-centered h1 {
     font-size: 2.2rem;
+    line-height: 1.2;
   }
 
   .hero-content-centered p {
