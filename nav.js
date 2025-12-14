@@ -24,6 +24,7 @@ function loadNavigation() {
               <li><a href="#">ML and Data Science</a></li>
               <li><a href="data-analytics.html">Data and Analytics</a></li>
               <li><a href="llm-ml-data-agent-ops.html">LLM/ML/Data/Agent Ops</a></li>
+              <li><a href="#">Physical AI and Robotics</a></li>
             </ul>
           </li>
           <li class="nav-item">
