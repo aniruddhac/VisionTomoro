@@ -1507,14 +1507,15 @@ body {
 }
 
 .hero-content-right h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.4rem;
+  margin-bottom: 3.5rem;
   font-weight: 700;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .page-hero h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
   line-height: 1.2;
@@ -2920,7 +2921,7 @@ body {
   }
 
   .page-hero h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 1.2;
   }
 
@@ -3020,7 +3021,7 @@ body {
   }
 
   .hero-content-right h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 1.2;
   }
 
