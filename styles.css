@@ -343,6 +343,7 @@ body {
 .hero-content h2 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -1232,7 +1233,7 @@ body {
     radial-gradient(circle at 40% 80%, rgba(102,126,234,0.1) 0%, transparent 50%),
     linear-gradient(135deg, #008080 0%, #8F63F1 100%);
   color: #fff;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1509,14 +1510,17 @@ body {
 .hero-content-right h1 {
   font-size: 2.4rem;
   margin-bottom: 3.5rem;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .page-hero h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
