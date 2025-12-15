@@ -15,16 +15,18 @@ function loadNavigation() {
       <nav class="navbar">
         <ul class="nav-menu" id="navMenu">
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">AI<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="#" class="nav-link has-dropdown">AI & Data<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
+              <li class="dropdown-group"><span>AI</span></li>
               <li><a href="agentic-ai.html">Agentic AI</a></li>
               <li><a href="generative-ai.html">Generative AI</a></li>
               <li><a href="#">Responsible AI</a></li>
               <li><a href="vibe-coding-agentic-devops.html">Vibe Coding & Agentic DevOps</a></li>
               <li><a href="#">ML and Data Science</a></li>
-              <li><a href="data-analytics.html">Data and Analytics</a></li>
               <li><a href="llm-ml-data-agent-ops.html">LLM/ML/Data/Agent Ops</a></li>
               <li><a href="#">Physical AI and Robotics</a></li>
+              <li class="dropdown-group"><span>Data</span></li>
+              <li><a href="data-analytics.html">Data and Analytics</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -39,13 +41,15 @@ function loadNavigation() {
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">Digital<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="#" class="nav-link has-dropdown">Cloud & Digital<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
+              <li class="dropdown-group"><span>Cloud</span></li>
               <li><a href="cloud.html">Cloud</a></li>
-              <li><a href="#">Digital Transformation</a></li>
-              <li><a href="application-services.html">Application Services</a></li>
               <li><a href="devops-infra-automation.html">DevOps and Infra Automation</a></li>
               <li><a href="#">Modernization and Portfolio Rationalization</a></li>
+              <li class="dropdown-group"><span>Digital</span></li>
+              <li><a href="#">Digital Transformation</a></li>
+              <li><a href="application-services.html">Application Services</a></li>
               <li><a href="microsoft-technologies.html">Microsoft Technologies</a></li>
               <li><a href="#">Product and Platforms</a></li>
               <li><a href="#">Enterprise Architecture</a></li>
