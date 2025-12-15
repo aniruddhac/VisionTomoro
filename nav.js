@@ -45,8 +45,10 @@ function loadNavigation() {
             <ul class="dropdown">
               <li class="dropdown-group"><span>Cloud</span></li>
               <li><a href="cloud.html">Cloud</a></li>
+              <li><a href="#">FinOps and Cost Optimization</a></li>
               <li><a href="devops-infra-automation.html">DevOps and Infra Automation</a></li>
-              <li><a href="#">Modernization and Portfolio Rationalization</a></li>
+              <li><a href="#">Modernization</a></li>
+              <li><a href="#">Application Portfolio Rationalization</a></li>
               <li class="dropdown-group"><span>Digital</span></li>
               <li><a href="#">Digital Transformation</a></li>
               <li><a href="application-services.html">Application Services</a></li>
