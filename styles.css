@@ -825,11 +825,11 @@ body {
 }
 
 .ai-service-link {
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   background: linear-gradient(135deg, #008080 0%, #4a90e2 100%);
   color: #fff;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 50px; /* Changed from 8px to 50px to match hero card buttons */
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.3s ease;
@@ -862,7 +862,7 @@ body {
   }
   
   .ai-service-link {
-    padding: 0.6rem 1.2rem;
+    padding: 0.48rem 1.2rem;
     font-size: 0.95rem;
   }
 }
