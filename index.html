@@ -361,7 +361,7 @@
       <h2 class="section-title">Our vision and core values</h2>
       <p style="font-size: 1.3rem; font-weight: 700; margin-bottom: 3rem; color: #333;">Partner with our clients to deliver value and growth – make their tomorrow's vision a reality today.</p>
 
-      <div class="core-values-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-bottom: 4rem;">
+      <div class="core-values-grid">
         <style>
           .core-value-card:hover {
             transform: translateY(-5px);
@@ -369,6 +369,26 @@
           }
           .core-value-card:hover p {
             color: #008080;
+          }
+          
+          .core-values-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+          }
+          
+          /* Mobile responsive styles */
+          @media (max-width: 768px) {
+            .core-values-grid {
+              grid-template-columns: 1fr;
+            }
+          }
+          
+          @media (max-width: 1024px) and (min-width: 769px) {
+            .core-values-grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
           }
         </style>
         <div class="core-value-card" style="background: #e9ecef; padding: 1.5rem; border-radius: 8px; text-align: center; border: 1px solid #adb5bd; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease;">

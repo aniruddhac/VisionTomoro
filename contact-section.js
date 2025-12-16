@@ -7,10 +7,15 @@ function insertContactSection() {
   const contactSectionHTML = `
     <section class="contact-section">
       <div class="container">
-        <div class="contact-content">
-          <h2>Ready to transform your business?</h2>
-          <p>Let's discuss how VisionTomoro can help you achieve your vision and accelerate your digital transformation journey.</p>
-          <a href="get-in-touch.html" class="contact-btn">Get in Touch</a>
+        <div class="contact-grid">
+          <div class="contact-image">
+            <img src="images/visiontomoro_black_bg.jpg" alt="VisionTomoro Contact Image">
+          </div>
+          <div class="contact-content">
+            <h2>Ready to transform your business?</h2>
+            <p>Let's discuss how VisionTomoro can help you achieve your vision and accelerate your digital transformation journey.</p>
+            <a href="get-in-touch.html" class="contact-btn">Get in Touch</a>
+          </div>
         </div>
       </div>
     </section>
