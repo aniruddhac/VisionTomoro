@@ -23,6 +23,7 @@ function loadNavigation() {
               <li><a href="#">Responsible AI</a></li>
               <li><a href="vibe-coding-agentic-devops.html">Vibe Coding & Agentic DevOps</a></li>
               <li><a href="#">ML and Data Science</a></li>
+              <li><a href="#">AI Infrastructure</a></li>
               <li><a href="llm-ml-data-agent-ops.html">LLM/ML/Data/Agent Ops</a></li>
               <li><a href="#">Physical AI and Robotics</a></li>
               <li class="dropdown-group"><span>Data</span></li>
@@ -33,7 +34,7 @@ function loadNavigation() {
             <a href="#" class="nav-link has-dropdown">Consulting<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li><a href="consulting.html#strategy-consulting">Strategy Consulting</a></li>
-              <li><a href="consulting.html#ai-strategy">AI Strategy and Readiness Assessment</a></li>
+              <li><a href="ai-strategy.html">AI Strategy and Advisory</a></li>
               <li><a href="consulting.html#technology-consulting">Technology Consulting</a></li>
               <li><a href="consulting.html#architecture-consulting">Architecture Consulting</a></li>
               <li><a href="consulting.html#digital-strategy">Digital Strategy and Assessment</a></li>
