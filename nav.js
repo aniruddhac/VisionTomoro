@@ -35,7 +35,7 @@ function loadNavigation() {
             <ul class="dropdown">
               <li><a href="consulting.html#strategy-consulting">Strategy Consulting</a></li>
               <li><a href="ai-strategy.html">AI Strategy and Advisory</a></li>
-              <li><a href="consulting.html#technology-consulting">Technology Consulting</a></li>
+              <li><a href="technology-consulting.html">Technology Consulting</a></li>
               <li><a href="consulting.html#architecture-consulting">Architecture Consulting</a></li>
               <li><a href="consulting.html#digital-strategy">Digital Strategy and Assessment</a></li>
               <li><a href="consulting.html#gcc-service">GCC as a Service</a></li>
