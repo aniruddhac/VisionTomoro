@@ -1030,8 +1030,15 @@ body {
 }
 
 .experience-client,
+.experience-background,
 .experience-scope {
   margin-bottom: 1rem;
+}
+
+.experience-background {
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.5;
 }
 
 .experience-highlight {
@@ -2397,7 +2404,7 @@ body {
 
 /* Neo Consulting Layout - Special layout with 2-row card */
 .neo-consulting-layout {
-  grid-template-rows: auto auto; /* Two rows */
+  grid-template-rows: auto auto auto; /* Three rows */
   grid-template-columns: repeat(3, 1fr); /* Three columns */
 }
 
@@ -4065,7 +4072,7 @@ body {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.85rem;
-  min-width: 600px;
+  min-width: 700px;
   color: #fff;
 }
 
@@ -4109,19 +4116,121 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Responsive styles for mobile */
-@media (max-width: 768px) {
+/* Hybrid Approach: Mobile-First Responsive Design */
+@media (max-width: 1024px) {
+  /* Tablet improvements */
   .neo-consulting-table table {
-    font-size: 0.8rem;
+    font-size: 0.82rem;
+    min-width: 650px;
   }
   
   .neo-consulting-table th,
   .neo-consulting-table td {
+    padding: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Mobile: Transform table into stacked cards */
+  .neo-consulting-table {
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  
+  .neo-consulting-table table {
+    display: block;
+    width: 100%;
+    min-width: auto;
+    font-size: 0.85rem;
+    box-shadow: none;
+  }
+  
+  .neo-consulting-table thead {
+    display: none;
+  }
+  
+  .neo-consulting-table tbody {
+    display: block;
+    width: 100%;
+  }
+  
+  .neo-consulting-table tbody tr {
+    display: block;
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  
+  .neo-consulting-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+  
+  .neo-consulting-table tbody td {
+    display: block;
+    padding: 0.75rem;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .neo-consulting-table tbody td:last-child {
+    border-bottom: none;
+  }
+  
+  .neo-consulting-table tbody td:first-child {
+    font-weight: 700;
+    font-size: 1rem;
+    background: transparent;
+    padding-top: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Create visual separation between columns */
+  .neo-consulting-table tbody td:nth-child(2) {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Add labels for mobile */
+  .neo-consulting-table tbody td:nth-child(2)::before {
+    content: 'Traditional Consulting';
+    display: block;
+    font-weight: 600;
+    color: #e2e8f0;
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+  }
+  
+  .neo-consulting-table tbody td:nth-child(3)::before {
+    content: 'VisionTomoro';
+    display: block;
+    font-weight: 600;
+    color: #e2e8f0;
+    margin-bottom: 0.25rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small mobile optimizations */
+  .neo-consulting-table {
+    padding: 0.75rem;
+  }
+  
+  .neo-consulting-table tbody tr {
+    padding: 0.75rem;
+  }
+  
+  .neo-consulting-table tbody td {
     padding: 0.6rem;
   }
   
-  .neo-consulting-table thead th {
-    font-size: 0.85rem;
+  .neo-consulting-table tbody td:first-child {
+    font-size: 0.95rem;
   }
 }
 
