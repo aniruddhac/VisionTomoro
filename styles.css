@@ -505,6 +505,7 @@ body {
   text-align: center;
   font-size: 1.6rem;
   margin-bottom: 3rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   background: linear-gradient(90deg, #008080 0%, #8F63F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -513,6 +514,7 @@ body {
 }
 
 .section-title.teal-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -667,6 +669,7 @@ body {
 }
 
 .cloud-continuum-section .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -854,7 +857,7 @@ body {
 .ai-transformation-section .section-title {
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  font-family: 'Crimson Text', 'Garamond', 'Playfair Display', serif;
+  font-family: 'Plus Jakarta Sans', 'Crimson Text', 'Garamond', 'Playfair Display', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   text-align: left;
@@ -947,6 +950,7 @@ body {
 }
 
 .experience-section .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1927,6 +1931,7 @@ body {
 }
 
 .hyperscaler-section .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   color: #1a1a2e;
 }
 
@@ -2247,6 +2252,7 @@ body {
 }
 
 .value-prop-content .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: left;
 }
 
@@ -2354,6 +2360,7 @@ body {
 }
 
 .signature-strength-section .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   color: #fff !important;
   background: none !important;
   -webkit-background-clip: unset !important;
@@ -3507,11 +3514,11 @@ body {
 }
 
 .pipeline-section .section-title {
+  font-family: 'Plus Jakarta Sans', 'Fira Code', 'Courier New', sans-serif;
   color: #fff;
   background: none;
   -webkit-text-fill-color: initial;
   text-align: left;
-  font-family: 'Fira Code', 'Courier New', monospace;
   border-bottom: 2px solid #238636;
   display: inline-block;
   padding-bottom: 0.5rem;
@@ -3938,6 +3945,7 @@ body {
 }
 
 .contact-form-wrapper .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -4105,6 +4113,7 @@ body {
 }
 
 .ai-strategy-section .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -4149,6 +4158,7 @@ body {
 }
 
 .ai-readiness-section .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -4193,6 +4203,7 @@ body {
 }
 
 .ai-advisory-section .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -4237,6 +4248,7 @@ body {
 }
 
 .technology-experience-section .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -4281,6 +4293,7 @@ body {
 }
 
 .consulting-content-section .section-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
