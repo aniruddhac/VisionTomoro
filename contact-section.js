@@ -13,8 +13,8 @@ function insertContactSection() {
           </div>
           <div class="contact-content">
             <h2>Ready to transform your business?</h2>
-            <p>Let's discuss how VisionTomoro can help you achieve your vision and accelerate your digital transformation journey.</p>
-            <a href="get-in-touch.html" class="btn-primary">Get in Touch<img src="images/up-arrow-removebg.png" alt="arrow" class="btn-arrow"></a>
+            <p>Traditional consulting moves at the speed of slides. We move at the speed of code. Let’s architect your AI future and turn your technical debt into a competitive engine together.</p>
+            <a href="get-in-touch.html" class="btn-primary">Build the Future Now<img src="images/up-arrow-removebg.png" alt="arrow" class="btn-arrow"></a>
           </div>
         </div>
       </div>
