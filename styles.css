@@ -2343,9 +2343,86 @@ body {
 /* Bento Grid System */
 .bento-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-top: 2rem;
+}
+
+/* Neo Consulting Layout - Special layout with 2-row card */
+.neo-consulting-layout {
+  grid-template-rows: auto auto; /* Two rows */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+}
+
+.neo-consulting-card {
+  grid-column: span 2; /* Span 2 columns */
+  grid-row: span 2; /* Span 2 rows */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bento-card-stack {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two equal rows */
+  gap: 1.5rem;
+  min-height: 400px; /* Ensure minimum height for proper stacking */
+}
+
+/* Position the remaining cards in row 3 */
+.neo-consulting-layout .bento-card:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.neo-consulting-layout .bento-card:nth-child(4) {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.neo-consulting-layout .bento-card:nth-child(5) {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+/* Mobile responsive - stack cards vertically on small screens */
+@media (max-width: 768px) {
+  .neo-consulting-layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .neo-consulting-card {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  
+  .bento-card-stack {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+  }
+}
+
+/* Tablet responsive */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .neo-consulting-layout {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .neo-consulting-card {
+    grid-column: 1 / span 2;
+    grid-row: span 1;
+  }
+  
+  .bento-card-stack {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+  }
 }
 
 .bento-card {
@@ -3923,6 +4000,76 @@ body {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
+}
+
+/* Neo Consulting Table Styles */
+.neo-consulting-table {
+  margin-top: 1.5rem;
+  overflow-x: auto;
+}
+
+.neo-consulting-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  min-width: 600px;
+  color: #fff;
+}
+
+.neo-consulting-table th,
+.neo-consulting-table td {
+  padding: 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+.neo-consulting-table thead th {
+  background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.9rem;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.neo-consulting-table thead th .sub-text {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 0.25rem;
+}
+
+.neo-consulting-table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.neo-consulting-table tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.neo-consulting-table tbody td:first-child {
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .neo-consulting-table table {
+    font-size: 0.8rem;
+  }
+  
+  .neo-consulting-table th,
+  .neo-consulting-table td {
+    padding: 0.6rem;
+  }
+  
+  .neo-consulting-table thead th {
+    font-size: 0.85rem;
+  }
 }
 
 /* AI Strategy Section */
