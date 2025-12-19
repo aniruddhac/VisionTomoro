@@ -3,5 +3,6 @@
     "frontend.html": true,
     "backend.js": true
   },
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "chat.agent.maxRequests": 50
 } 

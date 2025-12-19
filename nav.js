@@ -79,6 +79,7 @@ function loadNavigation() {
             <ul class="dropdown">
               <li><a href="our-story.html">Our story</a></li>
               <li><a href="our-leaders.html">Our leaders</a></li>
+              <li><a href="our-approach.html">Our approach</a></li>
               <li><a href="get-in-touch.html">Get in touch</a></li>
             </ul>
           </li>
