@@ -424,28 +424,34 @@ body {
 }
 
 .carousel-dot {
-  width: 12px;
-  height: 12px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  background-color: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
-  padding: 0;
-  outline: none;
+  margin: 0 8px;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
 }
 
 .carousel-dot:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-color: rgba(255, 255, 255, 0.8);
-  transform: scale(1.2);
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .carousel-dot.active {
-  background-color: #fff;
-  border-color: #fff;
-  width: 12px;
-  height: 12px;
+  background: white;
+  border-color: white;
+  color: #1a1a1a;
+  transform: scale(1.1);
 }
 
 .btn-primary {
@@ -3297,8 +3303,10 @@ body {
   }
 
   .carousel-dot {
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .carousel-dot.active {
