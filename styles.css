@@ -2338,6 +2338,8 @@ body {
   -webkit-text-fill-color: #fff !important;
   background-clip: unset !important;
   text-align: center;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Bento Grid System */
@@ -2345,7 +2347,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 
 /* Neo Consulting Layout - Special layout with 2-row card */
@@ -2360,6 +2362,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem !important; /* Remove top padding to eliminate space between card border and heading */
+  margin-top: 0;
 }
 
 .bento-card-stack {
@@ -4004,7 +4008,7 @@ body {
 
 /* Neo Consulting Table Styles */
 .neo-consulting-table {
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   overflow-x: auto;
 }
 
@@ -4025,7 +4029,7 @@ body {
 }
 
 .neo-consulting-table thead th {
-  background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
+  background: #1a1a2e;
   color: white;
   font-weight: 600;
   text-align: left;
