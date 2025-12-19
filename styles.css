@@ -1282,6 +1282,16 @@ body {
     radial-gradient(circle at 90% 80%, rgba(74, 144, 226, 0.05) 0%, transparent 50%);
 }
 
+.contact-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: -0.02em;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
 .contact-form {
   max-width: 800px;
   margin: 0 auto;
@@ -3928,6 +3938,7 @@ body {
 
   .contact-content h2 {
     font-size: 1.8rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .contact-content p {
