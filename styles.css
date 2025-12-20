@@ -2442,6 +2442,7 @@ body {
   flex-direction: column;
   padding: 1rem 1.5rem; /* Reduced padding for more compact card */
   margin-top: 0;
+  color: #fff; /* Set all text color to white */
 }
 
 .bento-card-stack {
@@ -2553,6 +2554,105 @@ body {
   color: rgba(255, 255, 255, 0.85);
   line-height: 1.7;
   font-size: 1rem;
+}
+
+/* Mobile Responsive for Neo Edge Grid */
+@media (max-width: 1024px) {
+  .neo-edge-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .neo-edge-card {
+    padding: 1.5rem;
+  }
+  
+  .neo-consulting-wide {
+    grid-column: span 2;
+  }
+  
+  .neo-delivery-model {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .neo-edge-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .neo-edge-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    grid-column: 1;
+    grid-row: auto;
+  }
+  
+  .neo-consulting-wide {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  
+  .neo-delivery-model {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  
+  .neo-edge-card h3 {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+  
+  .neo-edge-card p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+  
+  .neo-consulting-bullets {
+    margin-top: 1rem;
+  }
+  
+  .neo-consulting-bullets ul {
+    padding-left: 1.5rem;
+  }
+  
+  .neo-consulting-bullets li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .neo-edge-grid {
+    gap: 1.5rem;
+    padding: 0;
+  }
+  
+  .neo-edge-card {
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    grid-column: 1;
+    grid-row: auto;
+  }
+  
+  .neo-edge-card h3 {
+    font-size: 1.05rem;
+  }
+  
+  .neo-edge-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .neo-consulting-bullets li {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    padding: 0.5rem;
+  }
 }
 
 /* Mobile Responsive for Bento */
@@ -4159,6 +4259,131 @@ body {
 .neo-consulting-table tbody td:first-child {
   font-weight: 600;
   background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Neo Edge Grid Layout Styles */
+.neo-edge-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Ensure container doesn't overflow on mobile */
+@media (max-width: 768px) {
+  .neo-edge-grid {
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .neo-edge-grid {
+    padding: 0 0.5rem;
+  }
+}
+
+.neo-edge-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+.neo-edge-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.neo-edge-card p {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.neo-edge-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #ffffff;
+}
+
+/* Neo Consulting specific styles */
+.neo-consulting-wide {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.neo-edge-card:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.neo-edge-card:nth-child(3) {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.neo-delivery-model {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+}
+
+.neo-edge-card:nth-child(4) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.neo-edge-card:nth-child(6) {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+/* Neo Consulting Bullet Points Styles */
+.neo-consulting-bullets ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.neo-consulting-bullets li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #667eea;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+
+.neo-consulting-bullets li:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateX(4px);
+}
+
+.neo-consulting-bullets li strong {
+  color: #fff;
+  font-weight: 700;
 }
 
 /* Hybrid Approach: Mobile-First Responsive Design */
