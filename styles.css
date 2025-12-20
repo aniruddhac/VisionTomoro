@@ -1023,15 +1023,15 @@ body {
 
 .experience-card h3,
 .experience-detail {
-  padding: 0 2rem;
+  padding: 0 1.2rem;
 }
 
 .experience-card h3 {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 
 .experience-detail {
-  padding-bottom: 2rem;
+  padding-bottom: 1.2rem;
 }
 
 .experience-card:hover {
@@ -3541,11 +3541,35 @@ body {
   }
 
   .experience-card {
-    padding: 1.5rem;
+    padding: 0;
   }
 
   .experience-card h3 {
+    padding: 0.5rem 0.75rem 0 0.75rem;
     font-size: 1.1rem;
+  }
+
+  .experience-detail {
+    padding: 0 0.75rem 0.75rem 0.75rem;
+  }
+
+  .experience-detail p {
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-client,
+  .experience-background,
+  .experience-scope {
+    margin-bottom: 0.5rem;
+  }
+
+  .experience-highlight {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+
+  .experience-detail ul {
+    margin: 0.25rem 0 0.5rem 0;
   }
 
   .cloud-tabs {

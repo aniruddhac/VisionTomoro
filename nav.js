@@ -33,7 +33,7 @@ function loadNavigation() {
           <li class="nav-item">
             <a href="#" class="nav-link has-dropdown">Consulting<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
-              <li><a href="consulting.html#strategy-consulting">Strategy Consulting</a></li>
+              <li><a href="consulting.html#strategy-consulting">Neo-Consulting</a></li>
               <li><a href="ai-strategy.html">AI Strategy and Advisory</a></li>
               <li><a href="technology-consulting.html">Technology Consulting</a></li>
               <li><a href="consulting.html#architecture-consulting">Architecture Consulting</a></li>
