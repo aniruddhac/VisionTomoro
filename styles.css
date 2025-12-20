@@ -3334,6 +3334,20 @@ body {
     text-align: center;
   }
 
+  /* Mobile button spacing and alignment */
+  .hero-content .btn-primary,
+  .hero-content .btn-secondary {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hero-content .btn-secondary {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+  }
+
   .hero-image {
     order: -1;
   }
