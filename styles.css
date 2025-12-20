@@ -754,6 +754,32 @@ body {
   width: 100%;
 }
 
+/* Maturity Model styles (reuse dark background from cloud-continuum-section) */
+.maturity-model-section .maturity-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.maturity-model-section .maturity-level {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.maturity-model-section .maturity-level h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.maturity-model-section .maturity-level p {
+  color: #cbd5e0;
+  margin: 0.25rem 0;
+}
+
 @media (max-width: 900px) {
   .cloud-tabs-container {
     flex-direction: column;
