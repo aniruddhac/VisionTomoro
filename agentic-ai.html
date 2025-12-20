@@ -37,22 +37,25 @@
           <span class="secondary-nav-cloud-label">Agentic AI</span>
         </li>
         <li class="secondary-nav-item">
-          <a href="#our-offerings" class="secondary-nav-link">Our offerings</a>
-        </li>
-        <li class="secondary-nav-item">
-          <a href="#gen-ai-stack" class="secondary-nav-link">Gen AI stack</a>
+          <a href="#what-is-agentic-ai" class="secondary-nav-link">What is Agentic AI</a>
         </li>
         <li class="secondary-nav-item">
           <a href="#maturity-model" class="secondary-nav-link">Maturity Model</a>
         </li>
         <li class="secondary-nav-item">
-          <a href="#technology-experience" class="secondary-nav-link">Our technology experience</a>
+          <a href="#our-offerings" class="secondary-nav-link">Our offerings</a>
         </li>
         <li class="secondary-nav-item">
-          <a href="#success-stories" class="secondary-nav-link">Our success stories</a>
+          <a href="#gen-ai-stack" class="secondary-nav-link">Agentic AI stack</a>
         </li>
         <li class="secondary-nav-item">
-          <a href="#what-is-agentic-ai" class="secondary-nav-link">What is Agentic AI</a>
+          <a href="#technology-experience" class="secondary-nav-link">Our experience</a>
+        </li>
+        <li class="secondary-nav-item">
+          <a href="#success-stories" class="secondary-nav-link">Success stories</a>
+        </li>
+        <li class="secondary-nav-item">
+          <a href="#multi-agent-orchestration" class="secondary-nav-link">Multi agent patterns</a>
         </li>
       </ul>
     </div>
@@ -79,7 +82,7 @@
       </div>
       <div class="hero-content-right">
         <div class="hero-title-line"></div>
-        <h1>Agentic AI - From Chat to Action: Building Autonomous Enterprise</h1>
+        <h1>Agentic AI - From Assistants to Autonomous Agents: Building Autonomous Enterprise</h1>
         <p>
           2025 had been the year of AI agents, and it contunues in 2026. The Future is Agentic. We Engineer Systems that Think, Plan, Reason and Act.
           Adopt enterprise AI principles to make your agents secure, scale, resilients and responsible.
@@ -93,41 +96,67 @@
 
   <!-- Gen AI Offerings Section -->
   
+  <!-- Agentic AI Section -->
+  <section id="what-is-agentic-ai" class="agentic-ai-section scroll-animate">
+    <div class="container">
+      <h2 class="section-title">What is Agentic AI - From automation to autonomous</h2>
+      <p class="agentic-ai-description">Agentic AI uses autonomous AI agents (that can Think, Plan, Reason and Act) to redefine how to interact with systems and apps. 
+        These agents can perform complex tasks, make decisions, and adapt to changing environments, enabling businesses to automate workflows, enhance customer experiences, and drive innovation at scale.
+        They are different from previous generation Chatbots and generative AI assistant that primarily focus on text generation and conversation.
+        Below are key characteristics of Agentic AI systems:
+      </p>
+      <div class="agentic-ai-image">
+        <img src="images/agentic_ai.jpg" alt="Agentic AI">
+      </div>
+    </div>
+  </section>
+
   <!-- Agentic AI Maturity Model -->
   <section id="maturity-model" class="cloud-continuum-section maturity-model-section">
     <div class="container">
       <h2 class="section-title">Agentic AI Maturity Model for Enterprises</h2>
-      <div class="maturity-steps">
-        <div class="maturity-level">
-          <h3>Level 1: The Reactive Chatbot (Knowledge Retrieval)</h3>
-          <p><strong>State:</strong> The enterprise uses generic LLMs (ChatGPT/Claude) for basic summarization and drafting.</p>
-          <p><strong>Limitation:</strong> "The Island of Knowledge." It knows things but can’t do anything. Data is siloed and requires manual copying/pasting.</p>
-          <p><strong>VisionTomoro Focus:</strong> Context Ingestion &amp; Security Guardrails.</p>
+      <div class="maturity-timeline">
+        <div class="maturity-step">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>The Reactive Chatbot (Knowledge Retrieval)</h3>
+            <p><strong>State:</strong> The enterprise uses generic LLMs (ChatGPT/Claude) for basic summarization and drafting.</p>
+            <p><strong>Limitation:</strong> "The Island of Knowledge." It knows things but can't do anything. Data is siloed and requires manual copying/pasting.</p>
+            <p><strong>VisionTomoro Focus:</strong> Context Ingestion &amp; Security Guardrails.</p>
+          </div>
         </div>
 
-        <div class="maturity-level">
-          <h3>Level 2: The Grounded Assistant (RAG Enabled)</h3>
+        <div class="maturity-step">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>The Grounded Assistant (RAG Enabled)</h3>
           <p><strong>State:</strong> AI is connected to internal company documents (Retrieval-Augmented Generation). It answers questions based on your data.</p>
           <p><strong>Limitation:</strong> It is still reactive. A human must ask a question to get a result. It cannot execute transactions.</p>
           <p><strong>VisionTomoro Focus:</strong> Data Fabric Engineering &amp; Vector Database Optimization.</p>
         </div>
 
-        <div class="maturity-level">
-          <h3>Level 3: The Task-Specific Agent (System of Action)</h3>
+        <div class="maturity-step">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>The Task-Specific Agent (System of Action)</h3>
           <p><strong>State:</strong> The AI is given "Tools" (APIs, SQL access). It can perform specific tasks, like "Update a CRM record" or "Generate a Jira ticket."</p>
           <p><strong>Limitation:</strong> Restricted to single-turn tasks. It lacks the "Reasoning" to handle complex, multi-step projects.</p>
           <p><strong>VisionTomoro Focus:</strong> Tool-Use Architecture &amp; Intent Engineering.</p>
         </div>
 
-        <div class="maturity-level">
-          <h3>Level 4: The Multi-Agent System (Orchestrated Workflows)</h3>
+        <div class="maturity-step">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <h3>The Multi-Agent System (Orchestrated Workflows)</h3>
           <p><strong>State:</strong> Multiple specialized agents (e.g., a "Researcher Agent," a "Coder Agent," and a "QA Agent") work together to solve a high-level goal.</p>
           <p><strong>Limitation:</strong> Requires heavy human supervision and "AgentOps" to prevent loops or errors.</p>
           <p><strong>VisionTomoro Focus:</strong> Multi-Agent Orchestration (LangGraph/CrewAI) &amp; Agentic DevOps.</p>
         </div>
 
-        <div class="maturity-level">
-          <h3>Level 5: The Agentic Enterprise (Fully Autonomous)</h3>
+        <div class="maturity-step">
+          <div class="step-number">5</div>
+          <div class="step-content">
+            <h3>The Agentic Enterprise (Fully Autonomous)</h3>
           <p><strong>State:</strong> Self-learning agents manage end-to-end business processes (e.g., autonomous claims processing or self-healing cloud infra). Humans move to a "Governor" role.</p>
           <p><strong>Advantage:</strong> Zero-latency execution. The enterprise operates at the speed of light, not the speed of meetings.</p>
           <p><strong>VisionTomoro Focus:</strong> AgentOps Lifecycle Management &amp; Neo-Operating Model Design.</p>
@@ -453,17 +482,19 @@
     </div>
   </section>
 
-  <!-- Agentic AI Section -->
-  <section id="what-is-agentic-ai" class="agentic-ai-section scroll-animate">
+  <!-- Multi Agent Orchestration Patterns Section -->
+  <section id="multi-agent-orchestration" class="multi-agent-section scroll-animate">
     <div class="container">
-      <h2 class="section-title">What is Agentic AI - From automation to autonomous</h2>
-      <p class="agentic-ai-description">Agentic AI uses autonomous AI agents (that can Think, Plan, Reason and Act) to redefine how to interact with systems and apps. 
-        These agents can perform complex tasks, make decisions, and adapt to changing environments, enabling businesses to automate workflows, enhance customer experiences, and drive innovation at scale.
-        They are different from previous generation Chatbots and generative AI assistant that primarily focus on text generation and conversation.
-        Below are key characteristics of Agentic AI systems:
-      </p>
-      <div class="agentic-ai-image">
-        <img src="images/agentic_ai.jpg" alt="Agentic AI">
+      <h2 class="section-title">Multi agent orchestration patterns</h2>
+      <div class="multi-agent-content">
+        <div class="multi-agent-image">
+          <img src="images/Multi_agent_orchestartion_patterns.jpg" alt="Multi Agent Orchestration Patterns">
+        </div>
+        <div class="multi-agent-text">
+          <p>Multi-agent orchestration patterns define the architecture and communication strategies for coordinating multiple AI agents working together to solve complex problems. These patterns enable enterprises to design scalable, maintainable, and efficient agentic systems.</p>
+          <p>Key orchestration patterns include sequential task execution, parallel processing, hierarchical control structures, and peer-to-peer collaboration. Each pattern is optimized for different use cases and complexity levels.</p>
+          <p>VisionTomoro specializes in implementing these patterns using industry-leading frameworks and best practices, ensuring your multi-agent systems operate with maximum efficiency and reliability.</p>
+        </div>
       </div>
     </div>
   </section>
