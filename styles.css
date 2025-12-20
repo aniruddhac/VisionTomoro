@@ -2577,10 +2577,9 @@ body {
 
 @media (max-width: 768px) {
   .neo-edge-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    width: 100%;
-    max-width: 100%;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
   
   .neo-edge-card {
@@ -2588,18 +2587,6 @@ body {
     margin-bottom: 1.5rem;
     width: 100%;
     box-sizing: border-box;
-    grid-column: 1;
-    grid-row: auto;
-  }
-  
-  .neo-consulting-wide {
-    grid-column: 1;
-    grid-row: auto;
-  }
-  
-  .neo-delivery-model {
-    grid-column: 1;
-    grid-row: auto;
   }
   
   .neo-edge-card h3 {
@@ -2629,14 +2616,12 @@ body {
 @media (max-width: 480px) {
   .neo-edge-grid {
     gap: 1.5rem;
-    padding: 0;
+    padding: 0 0.5rem;
   }
   
   .neo-edge-card {
     padding: 1.25rem;
     margin-bottom: 1.5rem;
-    grid-column: 1;
-    grid-row: auto;
   }
   
   .neo-edge-card h3 {
@@ -4264,12 +4249,58 @@ body {
 /* Neo Edge Grid Layout Styles */
 .neo-edge-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
   gap: 1.5rem;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Mobile-first approach - all cards stack vertically by default */
+.neo-edge-card {
+  grid-column: 1;
+  grid-row: auto;
+}
+
+/* Tablet and desktop layout */
+@media (min-width: 769px) {
+  .neo-edge-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  
+  /* Row 1 positioning */
+  .neo-consulting-wide {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .neo-edge-grid > .neo-edge-card:nth-of-type(2) {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  
+  .neo-edge-grid > .neo-edge-card:nth-of-type(3) {
+    grid-column: 4;
+    grid-row: 1;
+  }
+  
+  /* Row 2 positioning */
+  .neo-delivery-model {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+  
+  .neo-edge-grid > .neo-edge-card:nth-of-type(4) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .neo-edge-grid > .neo-edge-card:nth-of-type(6) {
+    grid-column: 4;
+    grid-row: 2;
+  }
 }
 
 /* Ensure container doesn't overflow on mobile */
@@ -4324,37 +4355,6 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
   background: rgba(255, 255, 255, 0.08);
   border-color: #ffffff;
-}
-
-/* Neo Consulting specific styles */
-.neo-consulting-wide {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-.neo-edge-card:nth-child(2) {
-  grid-column: 3;
-  grid-row: 1;
-}
-
-.neo-edge-card:nth-child(3) {
-  grid-column: 4;
-  grid-row: 1;
-}
-
-.neo-delivery-model {
-  grid-column: 2 / span 2;
-  grid-row: 2;
-}
-
-.neo-edge-card:nth-child(4) {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.neo-edge-card:nth-child(6) {
-  grid-column: 4;
-  grid-row: 2;
 }
 
 /* Neo Consulting Bullet Points Styles */
