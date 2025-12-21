@@ -38,7 +38,7 @@ function loadNavigation() {
               <li><a href="technology-consulting.html">Technology Consulting</a></li>
               <li><a href="consulting.html#architecture-consulting">Architecture Consulting</a></li>
               <li><a href="consulting.html#digital-strategy">Digital Strategy and Assessment</a></li>
-              <li><a href="consulting.html#gcc-service">GCC as a Service</a></li>
+              <li><a href="consulting.html#gcc-service">AI-First GCC as a Service</a></li>
             </ul>
           </li>
           <li class="nav-item">
