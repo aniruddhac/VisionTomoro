@@ -26,6 +26,8 @@ function loadNavigation() {
               <li><a href="#">AI Infrastructure</a></li>
               <li><a href="llm-ml-data-agent-ops.html">LLM/ML/Data/Agent Ops</a></li>
               <li><a href="#">Physical AI and Robotics</a></li>
+              <li><a href="#">Sovereign AI</a></li>
+              <li><a href="#">Sustainable AI</a></li>
               <li class="dropdown-group"><span>Data</span></li>
               <li><a href="data-analytics.html">Data and Analytics</a></li>
             </ul>
@@ -52,7 +54,7 @@ function loadNavigation() {
               <li><a href="app-portfolio-rationalization.html">Application Portfolio Rationalization</a></li>
               <li class="dropdown-group"><span>Digital</span></li>
               <li><a href="#">Digital Transformation</a></li>
-              <li><a href="application-services.html">Application Services</a></li>
+              <li><a href="application-services.html">Applications & Engineering</a></li>
               <li><a href="microsoft-technologies.html">Microsoft Technologies</a></li>
               <li><a href="#">Product and Platforms</a></li>
               <li><a href="#">Enterprise Architecture</a></li>
