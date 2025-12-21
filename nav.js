@@ -45,7 +45,7 @@ function loadNavigation() {
             <a href="#" class="nav-link has-dropdown">Digital+<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li class="dropdown-group"><span>Cloud</span></li>
-              <li><a href="cloud.html">Cloud</a></li>
+              <li><a href="cloud.html">AI-Native Smart Cloud</a></li>
               <li><a href="#">FinOps Driven Architecture & Ops</a></li>
               <li><a href="devops-infra-automation.html">DevOps, VibeOps and Infra Automation</a></li>
               <li><a href="modernization.html">Modernization</a></li>
