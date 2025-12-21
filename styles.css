@@ -538,6 +538,18 @@ body {
   height: 450px;
 }
 
+/* Staggered vertical offset for selected cards */
+.service-card-flip.stagger {
+  transform: translateY(18px);
+  will-change: transform;
+}
+
+@media (max-width: 768px) {
+  .service-card-flip.stagger {
+    transform: none;
+  }
+}
+
 .service-card-inner {
   position: relative;
   width: 100%;
@@ -2295,7 +2307,7 @@ body {
 }
 
 .tech-content h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
   background: linear-gradient(90deg, #fff, #cbd5e0);
@@ -2305,7 +2317,7 @@ body {
 }
 
 .tech-content p {
-  font-size: 1.1rem;
+  font-size: 0.77rem;
   line-height: 1.6;
   max-width: 90%;
 }
@@ -4841,7 +4853,7 @@ body {
 }
 
 .technology-item h3 {
-  font-size: 1.2rem;
+  font-size: 0.84rem;
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
@@ -4850,7 +4862,7 @@ body {
 .technology-item p {
   color: #555;
   line-height: 1.6;
-  font-size: 0.95rem;
+  font-size: 0.665rem;
 }
 
 /* Consulting Content Section */
