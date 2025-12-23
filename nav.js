@@ -15,7 +15,7 @@ function loadNavigation() {
       <nav class="navbar">
         <ul class="nav-menu" id="navMenu">
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">AI+<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="#" class="nav-link has-dropdown">AI<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li class="dropdown-group"><span>AI</span></li>
               <li><a href="agentic-ai.html">Agentic AI</a></li>
@@ -37,6 +37,7 @@ function loadNavigation() {
             <ul class="dropdown">
               <li><a href="consulting.html#strategy-consulting">Neo-Consulting</a></li>
               <li><a href="ai-strategy.html">AI Strategy and Advisory</a></li>
+              <li><a href="data-strategy.html">Data Strategy</a></li>
               <li><a href="technology-consulting.html">Technology Consulting</a></li>
               <li><a href="consulting.html#architecture-consulting">Architecture Consulting</a></li>
               <li><a href="consulting.html#digital-strategy">Digital Strategy and Assessment</a></li>
@@ -44,7 +45,7 @@ function loadNavigation() {
             </ul>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">Digital+<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="#" class="nav-link has-dropdown">Digital<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li class="dropdown-group"><span>Cloud</span></li>
               <li><a href="cloud.html">AI-Native Smart Cloud</a></li>
@@ -54,7 +55,7 @@ function loadNavigation() {
               <li><a href="app-portfolio-rationalization.html">Application Portfolio Rationalization</a></li>
               <li class="dropdown-group"><span>Digital</span></li>
               <li><a href="#">Digital Transformation</a></li>
-              <li><a href="application-services.html">Applications & Engineering</a></li>
+              <li><a href="engineering.html">Engineering</a></li>
               <li><a href="microsoft-technologies.html">Microsoft Technologies</a></li>
               <li><a href="#">Product and Platforms</a></li>
               <li><a href="#">Enterprise Architecture</a></li>

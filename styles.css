@@ -5318,7 +5318,7 @@ body {
 
 .evolution-card .card-content li {
   padding: 0.75rem 0;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #d1d5db;
   color: #555;
   font-size: 0.95rem;
   line-height: 1.5;
@@ -5353,6 +5353,19 @@ body {
 }
 
 .evolution-card.ai-native-card .card-icon {
+  background: rgba(0, 128, 128, 0.1);
+  border-color: rgba(0, 128, 128, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 128, 128, 0.2);
+}
+
+/* Special styling for AI-First card */
+.evolution-card.ai-first-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid #008080;
+  box-shadow: 0 8px 25px rgba(0, 128, 128, 0.15);
+}
+
+.evolution-card.ai-first-card .card-icon {
   background: rgba(0, 128, 128, 0.1);
   border-color: rgba(0, 128, 128, 0.3);
   box-shadow: 0 4px 15px rgba(0, 128, 128, 0.2);
