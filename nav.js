@@ -18,8 +18,8 @@ function loadNavigation() {
             <a href="#" class="nav-link has-dropdown">AI<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li class="dropdown-group"><span>AI</span></li>
-              <li><a href="agentic-ai.html">Agentic AI</a></li>
-              <li><a href="generative-ai.html">Generative AI</a></li>
+              <li><a href="agentic-ai.html">Agentic AI and Autonomous Enterprise</a></li>
+              <li><a href="generative-ai.html">Enterprise Generative AI</a></li>
               <li><a href="#">Responsible AI</a></li>
               <li><a href="vibe-coding-agentic-devops.html">Vibe Coding & Agentic DevOps</a></li>
               <li><a href="#">ML and Data Science</a></li>
