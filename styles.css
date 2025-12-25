@@ -116,7 +116,7 @@ body {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, display 0s;
   border-radius: 4px;
   padding: 0.5rem 0;
   margin-top: 0.5rem;
@@ -127,6 +127,142 @@ body {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+/* Active state for mobile dropdowns */
+.nav-item.active .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Override hover styles on mobile for better UX */
+@media (max-width: 768px) {
+  .nav-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  /* Ensure dropdowns are hidden by default on mobile */
+  .nav-item:not(.active) .dropdown {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+  
+  /* Mobile dropdown positioning */
+  .dropdown {
+    position: relative !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: none !important;
+    background-color: #1a1a2e !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    z-index: 999 !important;
+    transition: all 0.3s ease !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  .nav-item.active .dropdown {
+    display: block !important;
+    max-height: 1000px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* Ensure dropdowns are visible on mobile */
+  .dropdown.dropdown-two-column {
+    position: relative !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: none !important;
+    background-color: #1a1a2e !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    z-index: 999 !important;
+    transition: all 0.3s ease !important;
+    max-height: 0 !important;
+    overflow: hidden !important;
+  }
+  
+  .nav-item.active .dropdown.dropdown-two-column {
+    display: flex !important;
+    max-height: 1000px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+  
+  /* Mobile dropdown list styling */
+  .dropdown-list {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .dropdown-list li {
+    margin: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  .dropdown-list li:last-child {
+    border-bottom: none !important;
+  }
+  
+  .dropdown-list a {
+    color: #cbd5e0 !important;
+    text-decoration: none !important;
+    display: block !important;
+    padding: 0.75rem 1rem !important;
+    transition: all 0.3s ease !important;
+    font-size: 0.85rem !important;
+    border-left: 4px solid transparent !important;
+  }
+  
+  .dropdown-list a:hover {
+    background: linear-gradient(135deg, #008080 0%, #8F63F1 100%) !important;
+    color: #fff !important;
+    padding-left: 1.5rem !important;
+    border-left-color: #8F63F1 !important;
+  }
+  
+  /* Ensure dropdown columns are properly styled on mobile */
+  .dropdown-column {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    padding: 1rem !important;
+    width: 100% !important;
+    flex: none !important;
+    background-color: #1a1a2e !important;
+  }
+  
+  .dropdown-column:last-child {
+    border-bottom: none !important;
+  }
+  
+  .dropdown-column-header {
+    margin-bottom: 1rem !important;
+    padding-bottom: 0.5rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background-color: #1a1a2e !important;
+  }
+  
+  .dropdown-column-header span {
+    font-size: 0.77rem !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+  }
 }
 
 .dropdown li {
@@ -1392,7 +1528,6 @@ body {
   max-width: 1000px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Hero Content Centered */
