@@ -1851,6 +1851,27 @@ body {
   font-size: 0.8rem;
 }
 
+.footer-locations {
+  margin: 0.5rem 0 0 0;
+  color: #cbd5e0;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Gen EI Grid Responsive Styles */
+.gen-ei-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .gen-ei-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
 /* Cloud Page Styles */
 .page-hero {
   /* Enhanced gradient background with multiple layers */

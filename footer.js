@@ -12,8 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <span class="footer-separator">|</span>
             <a href="sitemap.html">Sitemap</a>
           </div>
-          <p class="footer-copyright">&copy; 2025-26 VisionTomoro. All rights reserved.</p>
-        </div>
+          <p class="footer-copyright">&copy; 2025-26 VisionTomoro. All rights reserved.</p>          <p class="footer-locations">Locations - Bangalore, India | Kolkata, India | Chicago, IL, USA</p>        </div>
       </div>
     </footer>
   `;
