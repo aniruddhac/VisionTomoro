@@ -5680,4 +5680,20 @@ body {
   }
 }
 }
+
+/* GenEI Image Responsive Styles */
+.gen-ei-image {
+  width: 80%; /* Desktop width */
+  height: auto;
+  border-radius: 12px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+  .gen-ei-image {
+    width: 100%; /* Full width on mobile */
+  }
+}
 }
