@@ -1,0 +1,100 @@
+# VisionTomoro | Next Gen, AI-Native, Neo-Consulting and Digital Service for Enterprises | AI, Consulting, Cloud and Digital Services
+
+> VisionTomoro is an AI-native neo-consultancy specializing in Agentic AI, Gen AI, cloud, data, DevOps, and digital transformation solutions. We ship code and deliver outcomes, not just slide decks.
+
+## Core Concepts
+
+### [Agentic era](https://www.visiontomoro.com/#agentic-era): 
+This section discusses the emergence of the Agentic era, characterized by the integration of AI technologies that empower organizations to enhance decision-making and operational efficiency.
+
+### [Core capabilities](https://www.visiontomoro.com/#core-capabilities): 
+An overview of VisionTomoro's core capabilities, highlighting the essential skills and technologies that drive their consulting and digital service offerings.
+
+### [The Neo-Edge](https://www.visiontomoro.com/#neo-edge): 
+Explores the concept of the Neo-Edge, which represents the intersection of advanced technologies and innovative consulting practices that redefine enterprise solutions.
+
+### [Gen EI](https://www.visiontomoro.com/#genei): 
+Details on Generative Emotional Intelligence (Gen EI), focusing on how AI can enhance emotional understanding and interaction in business environments.
+
+## Services and Solutions
+
+### [Industry & engagement models](https://www.visiontomoro.com/#services-overview): 
+A comprehensive look at the various industry engagement models employed by VisionTomoro to tailor their services to specific sectors and client needs.
+
+### [Our vision & leaders](https://www.visiontomoro.com/#our-leaders): 
+An introduction to the vision of VisionTomoro and insights into the leadership team driving the company's strategic direction.
+
+### [Success stories](https://www.visiontomoro.com/#success-stories): 
+Showcases successful case studies and testimonials from clients who have benefited from VisionTomoro's innovative solutions.
+
+### [Our thinking](https://www.visiontomoro.com/#our-thinking): 
+A collection of thought leadership articles and insights that reflect VisionTomoro's approach to AI, consulting, and digital transformation.
+
+### [See how we do it](https://www.visiontomoro.com/our-story.html): 
+An invitation to explore the methodologies and processes that underpin VisionTomoro's service delivery and client engagement.
+
+### [Book a strategy call](https://www.visiontomoro.com/get-in-touch.html): 
+A call-to-action for potential clients to schedule a strategy session with VisionTomoro's experts to discuss their specific needs and challenges.
+
+## AI and Cloud Solutions
+
+### [Let AI agents do the work](https://www.visiontomoro.com/agentic-ai.html): 
+Discusses the role of AI agents in automating tasks and improving productivity within organizations.
+
+### [Start your cloud journey](https://www.visiontomoro.com/cloud.html): 
+Guidance on initiating a cloud transformation journey, including best practices and strategic considerations.
+
+### [Engineer AI-ready data](https://www.visiontomoro.com/data-analytics.html): 
+Focuses on the importance of preparing data for AI applications, ensuring it is structured and accessible for optimal performance.
+
+### [Simplify your architecture](https://www.visiontomoro.com/#): 
+Strategies for streamlining IT architecture to enhance efficiency and support digital transformation initiatives.
+
+## AI Strategies
+
+### [AI Strategy](https://www.visiontomoro.com/ai-strategy.html): 
+An overview of the strategic frameworks and methodologies VisionTomoro employs to develop effective AI strategies for clients.
+
+### [Generative AI](https://www.visiontomoro.com/generative-ai.html): 
+Insights into the applications and benefits of Generative AI technologies in various business contexts.
+
+### [Responsible AI](https://www.visiontomoro.com/generative-ai.html#responsible-ai): 
+A discussion on the ethical considerations and best practices for implementing AI responsibly within organizations.
+
+### [Vibe Coding and Agentic DevOps](https://www.visiontomoro.com/vibe-coding-agentic-devops.html): 
+Explores the integration of Vibe Coding and Agentic DevOps practices to enhance software development and operational efficiency.
+
+### [LLMOps and AgentOps](https://www.visiontomoro.com/llm-ml-data-agent-ops.html): 
+Details on LLMOps and AgentOps, focusing on operationalizing AI models and agents for business applications.
+
+### [Gen AI for Data, BI and Analytics](https://www.visiontomoro.com/ai-for-data-bi-analytics.html): 
+Examines how Generative AI can be leveraged for data analysis, business intelligence, and analytics to drive insights and decision-making.
+
+## Additional Resources
+
+### [Download Corporate Profile](https://www.visiontomoro.com/documents/VisionTomoro_Corporate_Profile_Brief.pdf): 
+A link to download VisionTomoro's corporate profile, providing an overview of the company's services, vision, and achievements.
+
+### [email protected](https://www.visiontomoro.com/cdn-cgi/l/email-protection): 
+Contact information for inquiries and further engagement with VisionTomoro.
+
+### [No Title](https://www.linkedin.com/in/rathidasgupta/): 
+Placeholder for additional content or resources that may be relevant.
+
+### [Bio](https://www.visiontomoro.com/our-leaders.html#rathi): 
+Biographical information about key team members or leaders within VisionTomoro.
+
+### [No Title](https://www.linkedin.com/in/aniruddhac/): 
+Another placeholder for potential future content.
+
+### [Bio](https://www.visiontomoro.com/our-leaders.html#aniruddha): 
+Further biographical details about other team members or leaders.
+
+### [No Title](https://www.linkedin.com/in/avijit-laha-3a7a3191/): 
+A placeholder for additional content or resources.
+
+### [Bio](https://www.visiontomoro.com/our-leaders.html#avijit): 
+Biographical information about another key individual within the organization.
+
+### [No Title](http://www.visiontomoro.com/index.html): 
+Final placeholder for any additional relevant content or resources.
