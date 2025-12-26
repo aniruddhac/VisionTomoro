@@ -44,7 +44,7 @@ function loadNavigation() {
                   <li><a href="#">Data Engineering</a></li>
                   <li><a href="#">Data Governance</a></li>
                   <li><a href="#">Data Operations</a></li>
-                  <li><a href="#">AI for Data, BI and Analytics</a></li>
+                  <li><a href="ai-for-data-bi-analytics.html">AI for Data, BI and Analytics</a></li>
                 </ul>
               </div>
             </div>
@@ -214,7 +214,6 @@ function setupMobileMenu() {
               otherDropdown.style.display = 'none';
               otherDropdown.style.opacity = '0';
               otherDropdown.style.visibility = 'hidden';
-              otherDropdown.style.maxHeight = '0';
             }
           }
         });
@@ -269,30 +268,6 @@ function setupMobileMenu() {
         }
       }
     });
-  });
-  
-  // Ensure dropdowns are properly positioned on mobile
-  window.addEventListener('resize', function() {
-    if (window.innerWidth <= 768) {
-      const dropdowns = document.querySelectorAll('.dropdown');
-      dropdowns.forEach(dropdown => {
-        dropdown.style.position = 'relative';
-        dropdown.style.boxShadow = 'none';
-        dropdown.style.border = 'none';
-        dropdown.style.margin = '0';
-        dropdown.style.transform = 'none';
-        dropdown.style.opacity = '1';
-        dropdown.style.visibility = 'visible';
-        dropdown.style.display = 'none';
-        dropdown.style.background = '#1a1a2e';
-        dropdown.style.borderTop = '1px solid rgba(255, 255, 255, 0.1)';
-        dropdown.style.borderBottom = '1px solid rgba(255, 255, 255, 0.1)';
-        dropdown.style.zIndex = '999';
-        dropdown.style.transition = 'all 0.3s ease';
-        dropdown.style.maxHeight = '0';
-        dropdown.style.overflow = 'hidden';
-      });
-    }
   });
   
   // Close dropdowns when window is resized to desktop
