@@ -383,7 +383,7 @@ body {
 
 /* Secondary Navigation Bar */
 .secondary-nav {
-  background-color: #e5e7eb;
+  background-color: #e6e6fa; /* Lavender color */
   border-bottom: 1px solid #d1d5db;
   padding: 0;
   position: sticky;
@@ -440,9 +440,9 @@ body {
 }
 
 .secondary-nav-link:hover {
-  background-color: #cbd5e0;
-  color: #4a90e2;
-  border-bottom-color: #4a90e2;
+  background-color: #d8bfd8; /* Darker lavender color for hover */
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
 /* Hero Section */
@@ -575,7 +575,7 @@ body {
 .hero-content h2 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -859,6 +859,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .service-card-front p {
@@ -872,6 +873,7 @@ body {
   margin-bottom: 1.5rem;
   color: #fff;
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .service-card-back ul {
@@ -1553,6 +1555,7 @@ body {
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .hero-content-centered p {
@@ -1578,6 +1581,7 @@ body {
   color: #008080;
   margin-bottom: 0.5rem;
   font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .stat-item p {
@@ -1626,6 +1630,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .contact-info-card p {
@@ -1664,6 +1669,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .contact-intro p {
@@ -2272,7 +2278,7 @@ body {
 .hero-content-right h1 {
   font-size: 2.4rem;
   margin-bottom: 3.5rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
@@ -2282,7 +2288,7 @@ body {
 .page-hero h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -2344,10 +2350,12 @@ body {
   color: #1a1a2e;
   font-weight: 600;
   transition: color 0.3s ease;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .offering-card:hover h3 {
   color: #008080;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .offering-card p {
@@ -2625,6 +2633,7 @@ body {
     margin-bottom: 1rem;
     color: #1a1a2e;
     font-weight: 600;
+    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 
   .hyperscaler-card p {
@@ -2789,6 +2798,7 @@ body {
   margin: 0;
   position: relative;
   z-index: 1;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .engagement-card p {
@@ -2802,6 +2812,7 @@ body {
 
 .engagement-card:hover h3 {
   color: #008080;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .engagement-card:hover p {
@@ -2957,10 +2968,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .bento-card:hover h3 {
   color: #ffffff;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .bento-card p {
@@ -3355,6 +3368,8 @@ body {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   transition: transform 0.3s ease;
 }
+
+
 
 .glass-card:hover {
   transform: translateY(-5px);

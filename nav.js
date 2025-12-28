@@ -71,11 +71,6 @@ function loadNavigation() {
                 </div>
                 <ul class="dropdown-list">
                   <li><a href="consulting.html#gcc-service">AI-First GCC as a Service</a></li>
-                  <li><a href="#">Readiness Assessment</a></li>
-                  <li><a href="#">Implementation Roadmap</a></li>
-                  <li><a href="#">Change Management</a></li>
-                  <li><a href="#">Training & Enablement</a></li>
-                  <li><a href="#">Governance Framework</a></li>
                 </ul>
               </div>
             </div>
