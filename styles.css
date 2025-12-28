@@ -2578,6 +2578,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .tech-content p {
@@ -3384,6 +3385,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .glass-card p {
@@ -3504,6 +3506,7 @@ body {
   margin-bottom: 0.5rem;
   color: #1a1a2e;
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .leader-title {
@@ -3597,6 +3600,7 @@ body {
   margin-bottom: 0.3rem;
   font-weight: 700;
   color: #1a1a2e;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .leader-designation {
@@ -3653,6 +3657,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .leader-section ul {
@@ -4252,7 +4257,7 @@ body {
 }
 
 .pipeline-card h3 {
-  font-family: 'Fira Code', 'Courier New', monospace;
+  font-family: 'Plus Jakarta Sans', 'Fira Code', 'Courier New', monospace;
   font-size: 1.1rem;
   color: #58a6ff;
   /* GitHub Blue */
@@ -4502,6 +4507,7 @@ body {
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.3;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .contact-content p {
@@ -5081,6 +5087,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .ai-strategy-item p {
@@ -5126,6 +5133,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .ai-readiness-item p {
@@ -5171,6 +5179,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .ai-advisory-item p {
@@ -5216,6 +5225,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .technology-item p {
@@ -5287,6 +5297,7 @@ body {
 .perspective-col.perspective-gradient .perspective-content h3 {
   color: #fff;
   border-bottom-color: rgba(255, 255, 255, 0.2);
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .perspective-col:hover {
@@ -5316,6 +5327,7 @@ body {
   border-bottom: 2px solid #f0f0f0;
   padding-bottom: 0.5rem;
   display: inline-block;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .perspective-content ul {
@@ -5595,6 +5607,7 @@ body {
   margin: 0;
   color: #1a1a2e;
   font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 .evolution-card .card-content ul {
