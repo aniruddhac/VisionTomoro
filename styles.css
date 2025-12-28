@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-/* Ensure Inter font is used with high specificity */
-html, body, * {
-  font-family: 'Inter', Arial, 'Segoe UI', sans-serif !important;
+/* Ensure Inter font is used for body text with high specificity */
+html, body {
+  font-family: 'Inter', Arial, 'Segoe UI', sans-serif;
 }
 
 body {
