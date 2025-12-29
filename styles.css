@@ -1321,6 +1321,8 @@ body {
   .ai-service-link {
     padding: 0.48rem 1.2rem;
     font-size: 0.95rem;
+    text-align: left;
+    justify-content: flex-start;
   }
 }
 
@@ -6200,9 +6202,23 @@ body {
     order: 1;
     width: 100%;
   }
-  
+}
+
+/* Ensure AI services grid maintains left alignment in mobile view */
+@media (max-width: 768px) {
   .ai-services-grid {
-    order: 1;
-    justify-content: center;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  .ai-service-link {
+    text-align: left;
+    justify-content: flex-start;
+  }
+  
+  .cta-service-link {
+    text-align: left;
+    justify-content: flex-start;
   }
 }
