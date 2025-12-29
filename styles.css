@@ -690,7 +690,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.7rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: #008080;
   color: #fff;
   text-decoration: none;
@@ -714,7 +714,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.7rem 2rem;
+  padding: 0.5rem 2rem;
   background-color: transparent;
   color: #fff;
   text-decoration: none;
@@ -1274,7 +1274,7 @@ body {
 .cta-service-link {
   background: #008080;
   color: #fff;
-  padding: 0.75rem 1.5rem;
+  padding: 0.53rem 1.5rem;
   border-radius: 25px;
   box-shadow: 0 4px 15px rgba(0, 128, 128, 0.3);
   transition: all 0.3s ease;
@@ -1442,7 +1442,7 @@ body {
 }
 
 .experience-actions .btn-secondary {
-  padding: 0.6rem 1.5rem;
+  padding: 0.43rem 1.5rem;
   font-size: 0.9rem;
   border-radius: 25px;
   transition: all 0.3s ease;
@@ -4102,7 +4102,7 @@ body {
   }
 
   .experience-actions .btn-secondary {
-    padding: 0.5rem 1.25rem;
+    padding: 0.36rem 1.25rem;
     font-size: 0.85rem;
   }
 
@@ -6166,7 +6166,7 @@ body {
 
 /* Ensure perfect middle alignment of Gen EI elements */
 .gen-ei-row .btn-primary {
-  padding: 0.7rem 2rem;
+  padding: 0.5rem 2rem;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -6175,7 +6175,7 @@ body {
 }
 
 .gen-ei-row .btn-secondary {
-  padding: 0.7rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   align-items: center;
   justify-content: center;
   text-align: center;
