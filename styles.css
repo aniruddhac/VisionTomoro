@@ -1336,6 +1336,28 @@ body {
   width: 100%;
   height: 200px;
   overflow: hidden;
+  position: relative;
+}
+
+.experience-tags {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.experience-tags .category-badge {
+  background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 
 .experience-image img {
@@ -4032,6 +4054,17 @@ body {
 
   .experience-detail {
     padding: 0 0.75rem 0.75rem 0.75rem;
+  }
+
+  .experience-tags {
+    top: 0.75rem;
+    left: 0.75rem;
+    gap: 0.4rem;
+  }
+
+  .experience-tags .category-badge {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.65rem;
   }
 
   .experience-detail p {
