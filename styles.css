@@ -1388,6 +1388,25 @@ body {
   margin-bottom: 1rem;
 }
 
+.experience-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.experience-actions .btn-secondary {
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.experience-actions .btn-secondary:hover {
+  background-color: #fff;
+  color: #008080;
+  transform: translateY(-2px);
+}
+
 .experience-background {
   font-size: 0.9rem;
   color: #333;
@@ -4017,6 +4036,16 @@ body {
 
   .experience-detail p {
     margin-bottom: 0.5rem;
+  }
+
+  .experience-actions {
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .experience-actions .btn-secondary {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
   }
 
   .experience-client,
