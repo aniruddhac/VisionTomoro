@@ -1413,6 +1413,15 @@ body {
   font-weight: 600;
 }
 
+.success-stories-subtitle {
+  font-size: 1rem;
+  color: #cbd5e0;
+  text-align: left;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
 .experience-detail p {
   margin-bottom: 1rem;
   color: #cbd5e0;
@@ -6139,6 +6148,22 @@ body {
   text-align: center;
 }
 
+/* Mobile responsive styling for Gen EI buttons */
+@media (max-width: 768px) {
+  .gen-ei-buttons {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .gen-ei-row .btn-secondary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
 /* Ensure perfect middle alignment of Gen EI elements */
 .gen-ei-row .btn-primary {
   padding: 0.7rem 2rem;
@@ -6169,6 +6194,11 @@ body {
   
   .gen-ei-cta {
     order: 2;
+  }
+  
+  .gen-ei-buttons {
+    order: 1;
+    width: 100%;
   }
   
   .ai-services-grid {
