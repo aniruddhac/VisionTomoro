@@ -1,0 +1,182 @@
+/* Neo Consulting Page Specific Styles */
+
+/* Neo Consulting Overview Section - White background with black text */
+.neo-consulting-wide.neo-consulting-page {
+  grid-column: span 2;
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #e5e7eb !important;
+}
+
+/* Text elements in Neo Consulting page */
+.neo-consulting-wide.neo-consulting-page h3 {
+  color: #000000 !important;
+}
+
+.neo-consulting-wide.neo-consulting-page p {
+  color: #000000 !important;
+}
+
+.neo-consulting-wide.neo-consulting-page strong {
+  color: #000000 !important;
+}
+
+.neo-consulting-wide.neo-consulting-page .sub-text {
+  color: #374151 !important;
+}
+
+/* Section title override for white background */
+.neo-consulting-wide.neo-consulting-page .section-title {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: #000000 !important;
+  background-clip: initial !important;
+  color: #000000 !important;
+}
+
+/* Table styling for Neo Consulting page */
+.neo-consulting-wide.neo-consulting-page .neo-consulting-table table {
+  color: #000000 !important;
+  background: #ffffff !important;
+}
+
+.neo-consulting-wide.neo-consulting-page .neo-consulting-table th,
+.neo-consulting-wide.neo-consulting-page .neo-consulting-table td {
+  border-color: #e5e7eb !important;
+  color: #000000 !important;
+  background: #ffffff !important;
+}
+
+.neo-consulting-wide.neo-consulting-page .neo-consulting-table thead th {
+  background: #f3f4f6 !important;
+  color: #000000 !important;
+}
+
+.neo-consulting-wide.neo-consulting-page .neo-consulting-table tbody tr:hover {
+  background-color: #f9fafb !important;
+}
+
+.neo-consulting-wide.neo-consulting-page .neo-consulting-table tbody td:first-child {
+  background-color: #f3f4f6 !important;
+}
+
+/* Neo Delivery Model section - White background with black text */
+.neo-delivery-model {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #e5e7eb !important;
+}
+
+/* Text elements in Neo Delivery Model */
+.neo-delivery-model h3 {
+  color: #000000 !important;
+}
+
+.neo-delivery-model p {
+  color: #000000 !important;
+}
+
+.neo-delivery-model span {
+  color: #000000 !important;
+}
+
+.neo-delivery-model li {
+  color: #000000 !important;
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .neo-consulting-wide.neo-consulting-page {
+    grid-column: span 2;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+  }
+  
+  .neo-consulting-wide.neo-consulting-page h3 {
+    color: #000000 !important;
+  }
+  
+  .neo-consulting-wide.neo-consulting-page p {
+    color: #000000 !important;
+  }
+  
+  .neo-consulting-wide.neo-consulting-page strong {
+    color: #000000 !important;
+  }
+  
+  .neo-consulting-wide.neo-consulting-page .sub-text {
+    color: #374151 !important;
+  }
+  
+  .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+  }
+  
+  .neo-delivery-model h3 {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model p {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model span {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model li {
+    color: #000000 !important;
+  }
+}
+
+/* Responsive styles for desktop */
+@media (min-width: 769px) {
+  .neo-consulting-wide.neo-consulting-page {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+  }
+  
+  .neo-consulting-wide.neo-consulting-page h3 {
+    color: #000000 !important;
+  }
+  
+  .neo-consulting-wide.neo-consulting-page p {
+    color: #000000 !important;
+  }
+  
+  .neo-consulting-wide.neo-consulting-page strong {
+    color: #000000 !important;
+  }
+  
+  .neo-consulting-wide.neo-consulting-page .sub-text {
+    color: #374151 !important;
+  }
+  
+  .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+  }
+  
+  .neo-delivery-model h3 {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model p {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model span {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model li {
+    color: #000000 !important;
+  }
+}

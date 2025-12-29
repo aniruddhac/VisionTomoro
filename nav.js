@@ -57,7 +57,7 @@ function loadNavigation() {
                   <span>CONSULTING</span>
                 </div>
                 <ul class="dropdown-list">
-                  <li><a href="consulting.html#strategy-consulting">Neo-Consulting</a></li>
+                  <li><a href="neo-consulting.html">Neo-Consulting</a></li>
                   <li><a href="ai-strategy.html">AI Strategy and Advisory</a></li>
                   <li><a href="data-strategy.html">Data Strategy</a></li>
                   <li><a href="technology-consulting.html">Technology Consulting</a></li>
