@@ -691,8 +691,8 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 2rem;
-  background-color: #e6e6fa;
-  color: #667eea;
+  background-color: #008080;
+  color: #fff;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
@@ -706,7 +706,7 @@ body {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 128, 128, 0.3);
 }
 
 /* Secondary Button Styles */
@@ -1807,14 +1807,14 @@ body {
   margin-top: 1rem;
   cursor: pointer;
   border: none;
-  background-color: #1a1a2e;
+  background-color: #008080;
   color: #fff;
 }
 
 .contact-form .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #2d3748;
+  box-shadow: 0 10px 20px rgba(0, 128, 128, 0.3);
+  background-color: #006666;
 }
 
 /* Floating Contact Button */
