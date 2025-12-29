@@ -691,7 +691,7 @@ body {
   align-items: center;
   gap: 0.5rem;
   padding: 0.7rem 2rem;
-  background-color: #fff;
+  background-color: #e6e6fa;
   color: #667eea;
   text-decoration: none;
   border-radius: 50px;
@@ -5746,4 +5746,355 @@ body {
     width: 100%; /* Full width on mobile */
   }
 }
+}
+
+/* Success Stories Page Styles */
+.success-stories-section {
+  background-color: #f8f9fa;
+}
+
+.success-stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.success-story-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.success-story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.story-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.story-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a2e;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.story-industry {
+  font-size: 0.9rem;
+  color: #008080;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.story-summary {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.story-link {
+  color: #008080;
+  text-decoration: none;
+  font-weight: 600;
+  align-self: flex-start;
+  transition: color 0.3s ease;
+}
+
+.story-link:hover {
+  color: #8F63F1;
+  text-decoration: underline;
+}
+
+/* Contact CTA Section */
+.contact-cta {
+  background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.contact-cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.contact-cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-button {
+  display: inline-block;
+  background: white;
+  color: #008080;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .success-stories-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-cta-content h2 {
+    font-size: 2rem;
+  }
+  
+  .contact-cta-content p {
+    font-size: 1rem;
+  }
+}
+
+/* Success Stories Detail Page Styles */
+.success-stories-detail-section {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.success-story-detail-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.success-story-detail-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.success-story-detail-header {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border-bottom: 1px solid #e9ecef;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.success-story-detail-image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.success-story-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.success-story-detail-info h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #1a1a2e;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.success-story-industry {
+  font-size: 1rem;
+  color: #008080;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.success-story-detail-content {
+  padding: 2rem;
+}
+
+.success-story-brief {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-left: 4px solid #008080;
+  border-radius: 4px;
+}
+
+.success-story-brief p {
+  margin: 0;
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.success-story-section {
+  margin-bottom: 2rem;
+}
+
+.success-story-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.success-story-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.success-story-section ul li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  color: #555;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.success-story-section ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #008080;
+  font-weight: bold;
+}
+
+.success-story-section ul li:last-child {
+  border-bottom: none;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .success-story-detail-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .success-story-detail-image {
+    width: 100%;
+    height: 200px;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .success-story-detail-info h2 {
+    font-size: 1.5rem;
+  }
+  
+  .success-story-detail-content {
+    padding: 1.5rem;
+  }
+
+  .success-story-brief {
+    padding: 1rem;
+  }
+}
+
+/* Gen EI Row Layout Styles */
+.gen-ei-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.gen-ei-cta {
+  flex: 0 0 auto;
+}
+
+.gen-ei-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Ensure perfect middle alignment of Gen EI elements */
+.gen-ei-row .btn-primary {
+  padding: 0.7rem 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.gen-ei-row .btn-secondary {
+  padding: 0.7rem 1.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 0;
+}
+
+/* Mobile responsive styles for Gen EI row */
+@media (max-width: 768px) {
+  .gen-ei-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .gen-ei-cta {
+    order: 2;
+  }
+  
+  .ai-services-grid {
+    order: 1;
+    justify-content: center;
+  }
 }

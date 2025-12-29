@@ -126,10 +126,11 @@ function loadNavigation() {
           <li class="nav-item">
             <a href="#" class="nav-link has-dropdown">Who we are<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
-              <li><a href="our-story.html">Our story</a></li>
-              <li><a href="our-leaders.html">Our leaders</a></li>
-              <li><a href="our-approach.html">Our approach</a></li>
-              <li><a href="get-in-touch.html">Get in touch</a></li>
+              <li><a href="success-stories.html">Success Stories</a></li>
+              <li><a href="our-story.html">Our Story</a></li>
+              <li><a href="our-leaders.html">Our Leaders</a></li>
+              <li><a href="our-approach.html">Our Approach</a></li>
+              <li><a href="get-in-touch.html">Get in Touch</a></li>
             </ul>
           </li>
         </ul>
