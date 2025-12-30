@@ -3155,11 +3155,15 @@ body {
     /* Inherit background and text color from .neo-edge-card */
   }
   
+  /* Neo Operating Model card - mobile should have white background */
   .neo-delivery-model {
     grid-column: span 2;
     background: #ffffff !important;
     color: #000000 !important;
     border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   }
   
   /* Ensure all text within the neo-delivery-model section is black */
@@ -3177,6 +3181,34 @@ body {
   
   .neo-delivery-model li {
     color: #000000 !important;
+  }
+  
+  /* Force override for tablet/mobile */
+  .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Ultimate override for tablet/mobile */
+  #neo-edge .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Final override for tablet/mobile */
+  body .neo-edge-grid .neo-delivery-model,
+  html body .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
   }
 }
 
@@ -3232,6 +3264,61 @@ body {
     font-size: 0.9rem;
     line-height: 1.6;
   }
+  
+  /* Neo Operating Model card - mobile should have white background */
+  .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  /* Ensure all text within the neo-delivery-model section is black on mobile */
+  .neo-delivery-model h3 {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model p {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model span {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model li {
+    color: #000000 !important;
+  }
+  
+  /* Force override for mobile */
+  .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Ultimate override for mobile */
+  #neo-edge .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Final override for mobile */
+  body .neo-edge-grid .neo-delivery-model,
+  html body .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -3258,6 +3345,61 @@ body {
     font-size: 0.85rem;
     line-height: 1.5;
     padding: 0.5rem;
+  }
+  
+  /* Neo Operating Model card - small mobile should have white background */
+  .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  /* Ensure all text within the neo-delivery-model section is black on small mobile */
+  .neo-delivery-model h3 {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model p {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model span {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model li {
+    color: #000000 !important;
+  }
+  
+  /* Force override for small mobile */
+  .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Ultimate override for small mobile */
+  #neo-edge .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Final override for small mobile */
+  body .neo-edge-grid .neo-delivery-model,
+  html body .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
   }
 }
 
@@ -4981,6 +5123,7 @@ body {
   .neo-delivery-model {
     grid-column: 2 / span 2;
     grid-row: 2;
+    /* Inherit background and text color from .neo-edge-card - dark theme */
   }
   
   .neo-edge-grid > .neo-edge-card:nth-of-type(4) {
@@ -5021,6 +5164,100 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   color: #fff;
+}
+
+/* Neo Operating Model card - desktop should inherit dark theme */
+@media (min-width: 769px) {
+  .neo-delivery-model {
+    /* Inherit from .neo-edge-card - dark theme */
+    background: rgba(0, 0, 0, 0.4) !important;
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  .neo-delivery-model h3 {
+    color: #fff !important;
+  }
+  
+  .neo-delivery-model p {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+  
+  .neo-delivery-model span {
+    color: #fff !important;
+  }
+  
+  .neo-delivery-model li {
+    color: #fff !important;
+  }
+}
+
+/* Neo Operating Model card - mobile should have white background */
+@media (max-width: 768px) {
+  .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+  
+  .neo-delivery-model h3 {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model p {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model span {
+    color: #000000 !important;
+  }
+  
+  .neo-delivery-model li {
+    color: #000000 !important;
+  }
+  
+  /* Force override for mobile */
+  .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Ultimate override for mobile */
+  #neo-edge .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Final override for mobile */
+  body .neo-edge-grid .neo-delivery-model,
+  html body .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+  
+  /* Additional specificity for mobile */
+  .neo-edge-grid .neo-delivery-model,
+  #neo-edge .neo-edge-grid .neo-delivery-model,
+  body .neo-edge-grid .neo-delivery-model,
+  html body .neo-edge-grid .neo-delivery-model {
+    background: #ffffff !important;
+    color: #000000 !important;
+    border-color: #e5e7eb !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
 }
 
 .neo-edge-card h3 {
