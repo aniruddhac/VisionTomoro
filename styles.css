@@ -381,6 +381,90 @@ body {
   }
 }
 
+/* Introduction Section */
+.introduction-section {
+  background-color: #e6e6fa;
+  padding: 32px 20px;
+  margin-bottom: 0;
+}
+
+.introduction-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.introduction-content {
+  text-align: left;
+}
+
+.introduction-title {
+  font-size: 1.75rem; /* 30% smaller than 2.5rem */
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.introduction-text {
+  font-size: 0.88rem; /* 20% smaller than 1.1rem */
+  line-height: 1.6;
+  color: #000;
+}
+
+.introduction-text p {
+  margin-bottom: 15px;
+}
+
+.introduction-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.introduction-buttons .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 2rem;
+  background-color: #008080;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.introduction-buttons .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 128, 128, 0.3);
+}
+
+.introduction-buttons .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 2rem;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+  margin-left: 1rem;
+}
+
+.introduction-buttons .btn-secondary:hover {
+  background-color: #fff;
+  color: #1a1a2e;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 /* Secondary Navigation Bar */
 .secondary-nav {
   background-color: #e6e6fa; /* Lavender color */
@@ -2894,7 +2978,7 @@ body {
 
 /* Signature Strength Section */
 .signature-strength-section {
-  padding: 4rem 2rem;
+  padding: 2.8rem 1.4rem;
   background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
   position: relative;
 }
@@ -3104,8 +3188,8 @@ body {
   }
   
   .neo-edge-card {
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
+    padding: 1.05rem;
+    margin-bottom: 1.05rem;
     width: 100%;
     box-sizing: border-box;
   }
@@ -3113,6 +3197,7 @@ body {
   .neo-edge-card h3 {
     font-size: 1.1rem;
     text-align: left;
+    margin-bottom: 0.7rem;
   }
   
   .neo-edge-card p {
@@ -3121,7 +3206,7 @@ body {
   }
   
   .neo-consulting-bullets {
-    margin-top: 2rem;
+    margin-top: 1.4rem;
   }
   
   .neo-consulting-bullets ul {
@@ -4853,7 +4938,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  gap: 1.5rem;
+  gap: 1.05rem;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -4928,19 +5013,19 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 2rem;
+  padding: 1.4rem;
   border-radius: 16px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   color: #fff;
 }
 
 .neo-edge-card h3 {
   font-size: 1.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   color: #fff;
   font-weight: 600;
   display: flex;
@@ -4965,7 +5050,7 @@ body {
 
 /* Neo Consulting Bullet Points Styles */
 .neo-consulting-bullets {
-  margin-top: 2rem;
+  margin-top: 1.4rem;
 }
 
 .neo-consulting-bullets ul {
@@ -6250,5 +6335,32 @@ body {
   .cta-service-link {
     text-align: left;
     justify-content: flex-start;
+  }
+}
+
+/* Mobile styles for introduction section */
+@media (max-width: 768px) {
+  .introduction-container {
+    padding: 0 15px;
+  }
+  
+  .introduction-title {
+    font-size: 1.4rem; /* 30% smaller than 2rem */
+  }
+  
+  .introduction-text {
+    font-size: 0.88rem;
+  }
+  
+  .introduction-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .introduction-buttons .btn-primary,
+  .introduction-buttons .btn-secondary {
+    width: auto;
+    margin-left: 0;
   }
 }
