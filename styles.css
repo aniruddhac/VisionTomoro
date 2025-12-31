@@ -5,7 +5,8 @@
 }
 
 /* Ensure Inter font is used for body text with high specificity */
-html, body {
+html,
+body {
   font-family: 'Inter', Arial, 'Segoe UI', sans-serif;
 }
 
@@ -147,18 +148,19 @@ body {
 
 /* Override hover styles on mobile for better UX */
 @media (max-width: 768px) {
+
   /* Remove hover styles on mobile to prevent conflicts with JavaScript */
   .nav-item:hover .dropdown {
     /* No hover styles on mobile - let JavaScript handle it */
   }
-  
+
   /* Ensure dropdowns are hidden by default on mobile */
   .nav-item:not(.active) .dropdown {
     display: none !important;
     opacity: 0 !important;
     visibility: hidden !important;
   }
-  
+
   /* Mobile dropdown positioning */
   .dropdown {
     position: relative !important;
@@ -177,14 +179,14 @@ body {
     max-height: 0 !important;
     overflow: hidden !important;
   }
-  
+
   .nav-item.active .dropdown {
     display: block !important;
     max-height: 1000px !important;
     opacity: 1 !important;
     visibility: visible !important;
   }
-  
+
   /* Ensure dropdowns are visible on mobile */
   .dropdown.dropdown-two-column {
     position: relative !important;
@@ -203,29 +205,29 @@ body {
     max-height: 0 !important;
     overflow: hidden !important;
   }
-  
+
   .nav-item.active .dropdown.dropdown-two-column {
     display: flex !important;
     max-height: 1000px !important;
     opacity: 1 !important;
     visibility: visible !important;
   }
-  
+
   /* Mobile dropdown list styling */
   .dropdown-list {
     padding: 0 !important;
     margin: 0 !important;
   }
-  
+
   .dropdown-list li {
     margin: 0 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
-  
+
   .dropdown-list li:last-child {
     border-bottom: none !important;
   }
-  
+
   .dropdown-list a {
     color: #cbd5e0 !important;
     text-decoration: none !important;
@@ -235,14 +237,14 @@ body {
     font-size: 0.85rem !important;
     border-left: 4px solid transparent !important;
   }
-  
+
   .dropdown-list a:hover {
     background: linear-gradient(135deg, #008080 0%, #8F63F1 100%) !important;
     color: #fff !important;
     padding-left: 1.5rem !important;
     border-left-color: #8F63F1 !important;
   }
-  
+
   /* Ensure dropdown columns are properly styled on mobile */
   .dropdown-column {
     border-right: none !important;
@@ -252,18 +254,18 @@ body {
     flex: none !important;
     background-color: #1a1a2e !important;
   }
-  
+
   .dropdown-column:last-child {
     border-bottom: none !important;
   }
-  
+
   .dropdown-column-header {
     margin-bottom: 1rem !important;
     padding-bottom: 0.5rem !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     background-color: #1a1a2e !important;
   }
-  
+
   .dropdown-column-header span {
     font-size: 0.77rem !important;
     font-weight: 700 !important;
@@ -359,23 +361,23 @@ body {
     flex-direction: column;
     min-width: 280px;
   }
-  
+
   .dropdown-column {
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem;
   }
-  
+
   .dropdown-column:last-child {
     border-bottom: none;
   }
-  
+
   .dropdown-icon-column {
     font-size: 1.2rem;
     width: 32px;
     height: 32px;
   }
-  
+
   .dropdown-column-header span:last-child {
     font-size: 1rem;
   }
@@ -402,7 +404,8 @@ body {
 }
 
 .introduction-title {
-  font-size: 1.75rem; /* 30% smaller than 2.5rem */
+  font-size: 1.75rem;
+  /* 30% smaller than 2.5rem */
   font-weight: 700;
   color: #000;
   margin: 0 0 10px 0;
@@ -410,7 +413,8 @@ body {
 }
 
 .introduction-text {
-  font-size: 0.88rem; /* 20% smaller than 1.1rem */
+  font-size: 0.88rem;
+  /* 20% smaller than 1.1rem */
   line-height: 1.6;
   color: #000;
 }
@@ -467,7 +471,8 @@ body {
 
 /* Secondary Navigation Bar */
 .secondary-nav {
-  background-color: #e6e6fa; /* Lavender color */
+  background-color: #e6e6fa;
+  /* Lavender color */
   border-bottom: 1px solid #d1d5db;
   padding: 0;
   position: sticky;
@@ -524,7 +529,8 @@ body {
 }
 
 .secondary-nav-link:hover {
-  background-color: #d8bfd8; /* Darker lavender color for hover */
+  background-color: #d8bfd8;
+  /* Darker lavender color for hover */
   color: #fff;
   border-bottom-color: #fff;
 }
@@ -1014,9 +1020,11 @@ body {
   0% {
     box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
   }
+
   70% {
     box-shadow: 0 0 0 10px rgba(46, 204, 113, 0);
   }
+
   100% {
     box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
   }
@@ -1867,7 +1875,7 @@ body {
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: -0.02em;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
@@ -3011,42 +3019,50 @@ body {
 /* Neo Consulting Layout - Special layout with 2-row card */
 .neo-consulting-layout {
   display: grid;
-  grid-template-rows: auto auto auto; /* Three rows */
-  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-template-rows: auto auto auto;
+  /* Three rows */
+  grid-template-columns: repeat(3, 1fr);
+  /* Three columns */
   gap: 1.5rem;
 }
 
 .neo-consulting-card {
-  grid-column: 1 / span 2; /* Span from column 1 to column 3 */
-  grid-row: 1 / span 2; /* Span from row 1 to row 2 */
+  grid-column: 1 / span 2;
+  /* Span from column 1 to column 3 */
+  grid-row: 1 / span 2;
+  /* Span from row 1 to row 2 */
   display: flex;
   flex-direction: column;
-  padding: 1rem 1.5rem; /* Reduced padding for more compact card */
+  padding: 1rem 1.5rem;
+  /* Reduced padding for more compact card */
   margin-top: 0;
-  color: #fff; /* Set all text color to white */
+  color: #fff;
+  /* Set all text color to white */
 }
 
 .bento-card-stack {
   grid-column: 3;
   grid-row: 1 / span 2;
   display: grid;
-  grid-template-rows: 1fr 1fr; /* Two equal rows */
+  grid-template-rows: 1fr 1fr;
+  /* Two equal rows */
   gap: 1.5rem;
-  min-height: 400px; /* Ensure minimum height for proper stacking */
+  min-height: 400px;
+  /* Ensure minimum height for proper stacking */
 }
 
 /* Position the remaining cards in row 3 */
-.neo-consulting-layout > .bento-card:nth-child(3) {
+.neo-consulting-layout>.bento-card:nth-child(3) {
   grid-column: 1;
   grid-row: 3;
 }
 
-.neo-consulting-layout > .bento-card:nth-child(4) {
+.neo-consulting-layout>.bento-card:nth-child(4) {
   grid-column: 2;
   grid-row: 3;
 }
 
-.neo-consulting-layout > .bento-card:nth-child(5) {
+.neo-consulting-layout>.bento-card:nth-child(5) {
   grid-column: 3;
   grid-row: 3;
 }
@@ -3056,12 +3072,12 @@ body {
   .neo-consulting-layout {
     grid-template-columns: 1fr;
   }
-  
+
   .neo-consulting-card {
     grid-column: 1;
     grid-row: auto;
   }
-  
+
   .bento-card-stack {
     grid-column: 1;
     display: grid;
@@ -3076,12 +3092,12 @@ body {
   .neo-consulting-layout {
     grid-template-columns: 1fr 1fr;
   }
-  
+
   .neo-consulting-card {
     grid-column: 1 / span 2;
     grid-row: span 1;
   }
-  
+
   .bento-card-stack {
     grid-column: 1;
     display: grid;
@@ -3144,17 +3160,17 @@ body {
   .neo-edge-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .neo-edge-card {
     padding: 1.5rem;
   }
-  
+
   /* Neo Consulting section styling for index.html - keep original dark theme */
   .neo-consulting-wide {
     grid-column: span 2;
     /* Inherit background and text color from .neo-edge-card */
   }
-  
+
   /* Neo Operating Model card - mobile should have white background */
   .neo-delivery-model {
     grid-column: span 2;
@@ -3165,24 +3181,24 @@ body {
     background-image: none !important;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   }
-  
+
   /* Ensure all text within the neo-delivery-model section is black */
   .neo-delivery-model h3 {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model p {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model span {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model li {
     color: #000000 !important;
   }
-  
+
   /* Force override for tablet/mobile */
   .neo-edge-grid .neo-delivery-model {
     background: #ffffff !important;
@@ -3191,7 +3207,7 @@ body {
     background-color: #ffffff !important;
     background-image: none !important;
   }
-  
+
   /* Ultimate override for tablet/mobile */
   #neo-edge .neo-edge-grid .neo-delivery-model {
     background: #ffffff !important;
@@ -3200,7 +3216,7 @@ body {
     background-color: #ffffff !important;
     background-image: none !important;
   }
-  
+
   /* Final override for tablet/mobile */
   body .neo-edge-grid .neo-delivery-model,
   html body .neo-edge-grid .neo-delivery-model {
@@ -3218,29 +3234,29 @@ body {
     padding: 0 1rem;
     box-sizing: border-box;
   }
-  
+
   .neo-edge-card {
     padding: 1.05rem;
     margin-bottom: 1.05rem;
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   .neo-edge-card h3 {
     font-size: 1.1rem;
     text-align: left;
     margin-bottom: 0.7rem;
   }
-  
+
   .neo-edge-card p {
     font-size: 0.95rem;
     text-align: left;
   }
-  
+
   .neo-consulting-bullets {
     margin-top: 1.4rem;
   }
-  
+
   .neo-consulting-bullets ul {
     padding-left: 1.5rem;
   }
@@ -3259,12 +3275,12 @@ body {
     margin-bottom: 0.35rem;
     color: inherit;
   }
-  
+
   .neo-consulting-bullets li {
     font-size: 0.9rem;
     line-height: 1.6;
   }
-  
+
   /* Neo Operating Model card - mobile should have white background */
   .neo-delivery-model {
     background: #ffffff !important;
@@ -3274,24 +3290,24 @@ body {
     background-image: none !important;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   }
-  
+
   /* Ensure all text within the neo-delivery-model section is black on mobile */
   .neo-delivery-model h3 {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model p {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model span {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model li {
     color: #000000 !important;
   }
-  
+
   /* Force override for mobile */
   .neo-edge-grid .neo-delivery-model {
     background: #ffffff !important;
@@ -3300,7 +3316,7 @@ body {
     background-color: #ffffff !important;
     background-image: none !important;
   }
-  
+
   /* Ultimate override for mobile */
   #neo-edge .neo-edge-grid .neo-delivery-model {
     background: #ffffff !important;
@@ -3309,7 +3325,7 @@ body {
     background-color: #ffffff !important;
     background-image: none !important;
   }
-  
+
   /* Final override for mobile */
   body .neo-edge-grid .neo-delivery-model,
   html body .neo-edge-grid .neo-delivery-model {
@@ -3326,27 +3342,27 @@ body {
     gap: 1.5rem;
     padding: 0 0.5rem;
   }
-  
+
   .neo-edge-card {
     padding: 1.25rem;
     margin-bottom: 1.5rem;
   }
-  
+
   .neo-edge-card h3 {
     font-size: 1.05rem;
   }
-  
+
   .neo-edge-card p {
     font-size: 0.9rem;
     line-height: 1.6;
   }
-  
+
   .neo-consulting-bullets li {
     font-size: 0.85rem;
     line-height: 1.5;
     padding: 0.5rem;
   }
-  
+
   /* Neo Operating Model card - small mobile should have white background */
   .neo-delivery-model {
     background: #ffffff !important;
@@ -3356,24 +3372,24 @@ body {
     background-image: none !important;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   }
-  
+
   /* Ensure all text within the neo-delivery-model section is black on small mobile */
   .neo-delivery-model h3 {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model p {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model span {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model li {
     color: #000000 !important;
   }
-  
+
   /* Force override for small mobile */
   .neo-edge-grid .neo-delivery-model {
     background: #ffffff !important;
@@ -3382,7 +3398,7 @@ body {
     background-color: #ffffff !important;
     background-image: none !important;
   }
-  
+
   /* Ultimate override for small mobile */
   #neo-edge .neo-edge-grid .neo-delivery-model {
     background: #ffffff !important;
@@ -3391,7 +3407,7 @@ body {
     background-color: #ffffff !important;
     background-image: none !important;
   }
-  
+
   /* Final override for small mobile */
   body .neo-edge-grid .neo-delivery-model,
   html body .neo-edge-grid .neo-delivery-model {
@@ -5098,40 +5114,40 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
   }
-  
+
   /* Row 1 positioning */
   .neo-consulting-wide {
     grid-column: 1 / span 2;
     grid-row: 1;
     /* Inherit background and text color from .neo-edge-card */
   }
-  
+
   /* Neo Consulting section styling for index.html - keep original dark theme */
   /* All text and table elements inherit from their parent .neo-edge-card and .neo-consulting-table styles */
-  
-  .neo-edge-grid > .neo-edge-card:nth-of-type(2) {
+
+  .neo-edge-grid>.neo-edge-card:nth-of-type(2) {
     grid-column: 3;
     grid-row: 1;
   }
-  
-  .neo-edge-grid > .neo-edge-card:nth-of-type(3) {
+
+  .neo-edge-grid>.neo-edge-card:nth-of-type(3) {
     grid-column: 4;
     grid-row: 1;
   }
-  
+
   /* Row 2 positioning */
   .neo-delivery-model {
     grid-column: 2 / span 2;
     grid-row: 2;
     /* Inherit background and text color from .neo-edge-card - dark theme */
   }
-  
-  .neo-edge-grid > .neo-edge-card:nth-of-type(4) {
+
+  .neo-edge-grid>.neo-edge-card:nth-of-type(4) {
     grid-column: 1;
     grid-row: 2;
   }
-  
-  .neo-edge-grid > .neo-edge-card:nth-of-type(6) {
+
+  .neo-edge-grid>.neo-edge-card:nth-of-type(6) {
     grid-column: 4;
     grid-row: 2;
   }
@@ -5174,19 +5190,19 @@ body {
     color: #fff !important;
     border-color: rgba(255, 255, 255, 0.2) !important;
   }
-  
+
   .neo-delivery-model h3 {
     color: #fff !important;
   }
-  
+
   .neo-delivery-model p {
     color: rgba(255, 255, 255, 0.85) !important;
   }
-  
+
   .neo-delivery-model span {
     color: #fff !important;
   }
-  
+
   .neo-delivery-model li {
     color: #fff !important;
   }
@@ -5202,23 +5218,23 @@ body {
     background-image: none !important;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
   }
-  
+
   .neo-delivery-model h3 {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model p {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model span {
     color: #000000 !important;
   }
-  
+
   .neo-delivery-model li {
     color: #000000 !important;
   }
-  
+
   /* Force override for mobile */
   .neo-edge-grid .neo-delivery-model {
     background: #ffffff !important;
@@ -5227,7 +5243,7 @@ body {
     background-color: #ffffff !important;
     background-image: none !important;
   }
-  
+
   /* Ultimate override for mobile */
   #neo-edge .neo-edge-grid .neo-delivery-model {
     background: #ffffff !important;
@@ -5236,7 +5252,7 @@ body {
     background-color: #ffffff !important;
     background-image: none !important;
   }
-  
+
   /* Final override for mobile */
   body .neo-edge-grid .neo-delivery-model,
   html body .neo-edge-grid .neo-delivery-model {
@@ -5246,7 +5262,7 @@ body {
     background-color: #ffffff !important;
     background-image: none !important;
   }
-  
+
   /* Additional specificity for mobile */
   .neo-edge-grid .neo-delivery-model,
   #neo-edge .neo-edge-grid .neo-delivery-model,
@@ -5375,12 +5391,13 @@ body {
 
 /* Hybrid Approach: Mobile-First Responsive Design */
 @media (max-width: 1024px) {
+
   /* Tablet improvements */
   .neo-consulting-table table {
     font-size: 0.82rem;
     min-width: 650px;
   }
-  
+
   .neo-consulting-table th,
   .neo-consulting-table td {
     padding: 0.7rem;
@@ -5388,6 +5405,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
   /* Mobile: Transform table into stacked cards */
   .neo-consulting-table {
     overflow-x: hidden;
@@ -5395,7 +5413,7 @@ body {
     border-radius: 12px;
     padding: 1rem;
   }
-  
+
   .neo-consulting-table table {
     display: block;
     width: 100%;
@@ -5403,16 +5421,16 @@ body {
     font-size: 0.85rem;
     box-shadow: none;
   }
-  
+
   .neo-consulting-table thead {
     display: none;
   }
-  
+
   .neo-consulting-table tbody {
     display: block;
     width: 100%;
   }
-  
+
   .neo-consulting-table tbody tr {
     display: block;
     background: rgba(255, 255, 255, 0.05);
@@ -5421,22 +5439,22 @@ body {
     padding: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.15);
   }
-  
+
   .neo-consulting-table tbody tr:hover {
     background: rgba(255, 255, 255, 0.08);
   }
-  
+
   .neo-consulting-table tbody td {
     display: block;
     padding: 0.75rem;
     border: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-  
+
   .neo-consulting-table tbody td:last-child {
     border-bottom: none;
   }
-  
+
   .neo-consulting-table tbody td:first-child {
     font-weight: 700;
     font-size: 1rem;
@@ -5444,14 +5462,14 @@ body {
     padding-top: 0;
     margin-bottom: 0.5rem;
   }
-  
+
   /* Create visual separation between columns */
   .neo-consulting-table tbody td:nth-child(2) {
     margin-top: 0.5rem;
     padding-top: 0.5rem;
     border-top: 2px solid rgba(255, 255, 255, 0.2);
   }
-  
+
   /* Add labels for mobile */
   .neo-consulting-table tbody td:nth-child(2)::before {
     content: 'Traditional Consulting';
@@ -5461,7 +5479,7 @@ body {
     margin-bottom: 0.25rem;
     font-size: 0.8rem;
   }
-  
+
   .neo-consulting-table tbody td:nth-child(3)::before {
     content: 'VisionTomoro';
     display: block;
@@ -5473,19 +5491,20 @@ body {
 }
 
 @media (max-width: 480px) {
+
   /* Small mobile optimizations */
   .neo-consulting-table {
     padding: 0.75rem;
   }
-  
+
   .neo-consulting-table tbody tr {
     padding: 0.75rem;
   }
-  
+
   .neo-consulting-table tbody td {
     padding: 0.6rem;
   }
-  
+
   .neo-consulting-table tbody td:first-child {
     font-size: 0.95rem;
   }
@@ -5890,10 +5909,13 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1);
     opacity: 1;
   }
+
   50% {
     transform: scale(1.1);
     opacity: 0.8;
@@ -5908,35 +5930,35 @@ body {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
   }
-  
+
   .floating-btn-icon {
     font-size: 1.1rem;
   }
-  
+
   /* Best Practices Section Mobile Styles */
   .best-practices-list {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
+
   .best-practices-list li {
     padding: 1rem;
     padding-left: 3rem;
   }
-  
+
   .best-practices-list li::before {
     left: 0.75rem;
     top: 0.75rem;
     font-size: 1.2rem;
   }
-  
+
   /* Hyperscaler Pipeline Section Mobile Styles */
   .pipeline-wrapper {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
   }
-  
+
   .pipeline-item {
     flex-direction: column;
     align-items: center;
@@ -5944,18 +5966,18 @@ body {
     max-width: 400px;
     margin: 1rem 0;
   }
-  
+
   .pipeline-connector {
     width: 2px;
     height: 40px;
     margin: 0 0 1rem 0;
   }
-  
+
   .pipeline-node {
     width: 12px;
     height: 12px;
   }
-  
+
   .pipeline-card {
     width: 100%;
     margin-top: 1rem;
@@ -5968,7 +5990,7 @@ body {
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
   }
-  
+
   .floating-btn-icon {
     font-size: 1rem;
   }
@@ -6135,15 +6157,15 @@ body {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .evolution-section {
     padding: 2rem 0;
   }
-  
+
   .evolution-section h2.section-title {
     font-size: 1.5rem;
   }
-  
+
   .evolution-section .section-subtitle {
     font-size: 1rem;
   }
@@ -6159,11 +6181,11 @@ body {
   .evolution-card {
     padding: 1.5rem;
   }
-  
+
   .evolution-card h3 {
     font-size: 1.25rem;
   }
-  
+
   .evolution-card .card-icon {
     font-size: 2rem;
     width: 50px;
@@ -6174,7 +6196,8 @@ body {
 
 /* GenEI Image Responsive Styles */
 .gen-ei-image {
-  width: 80%; /* Desktop width */
+  width: 80%;
+  /* Desktop width */
   height: auto;
   border-radius: 12px;
   margin: 0 auto;
@@ -6184,7 +6207,8 @@ body {
 /* Mobile breakpoint */
 @media (max-width: 768px) {
   .gen-ei-image {
-    width: 100%; /* Full width on mobile */
+    width: 100%;
+    /* Full width on mobile */
   }
 }
 }
@@ -6322,11 +6346,11 @@ body {
   .success-stories-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-cta-content h2 {
     font-size: 2rem;
   }
-  
+
   .contact-cta-content p {
     font-size: 1rem;
   }
@@ -6459,18 +6483,18 @@ body {
     text-align: center;
     padding: 1.5rem;
   }
-  
+
   .success-story-detail-image {
     width: 100%;
     height: 200px;
     margin-right: 0;
     margin-bottom: 1rem;
   }
-  
+
   .success-story-detail-info h2 {
     font-size: 1.5rem;
   }
-  
+
   .success-story-detail-content {
     padding: 1.5rem;
   }
@@ -6510,7 +6534,7 @@ body {
     align-items: center;
     width: 100%;
   }
-  
+
   .gen-ei-row .btn-secondary {
     width: 100%;
     max-width: 300px;
@@ -6545,11 +6569,11 @@ body {
     align-items: center;
     gap: 1.5rem;
   }
-  
+
   .gen-ei-cta {
     order: 2;
   }
-  
+
   .gen-ei-buttons {
     order: 1;
     width: 100%;
@@ -6563,12 +6587,12 @@ body {
     text-align: left;
     align-items: flex-start;
   }
-  
+
   .ai-service-link {
     text-align: left;
     justify-content: flex-start;
   }
-  
+
   .cta-service-link {
     text-align: left;
     justify-content: flex-start;
@@ -6580,24 +6604,226 @@ body {
   .introduction-container {
     padding: 0 15px;
   }
-  
+
   .introduction-title {
-    font-size: 1.4rem; /* 30% smaller than 2rem */
+    font-size: 1.4rem;
+    /* 30% smaller than 2rem */
   }
-  
+
   .introduction-text {
     font-size: 0.88rem;
   }
-  
+
   .introduction-buttons {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
-  
+
   .introduction-buttons .btn-primary,
   .introduction-buttons .btn-secondary {
     width: auto;
     margin-left: 0;
+  }
+}
+
+/* =========================================
+   Immersive Success Stories (Thoughtworks Style)
+   ========================================= */
+
+.immersive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.immersive-card {
+  position: relative;
+  height: 480px;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: #1a1a2e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+  cursor: pointer;
+  display: block;
+}
+
+.immersive-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border-color: rgba(79, 209, 197, 0.5);
+  /* Teal hint */
+}
+
+/* Background Image Layer */
+.immersive-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.8s ease;
+  filter: grayscale(10%) brightness(0.6);
+}
+
+.immersive-card:hover .immersive-bg {
+  transform: scale(1.05);
+  /* Slight zoom */
+  filter: grayscale(0%) brightness(0.85);
+}
+
+/* Gradient Overlay for Readability */
+.immersive-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0.95) 90%);
+  z-index: 1;
+}
+
+/* Content Container */
+.immersive-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+/* Top Tags */
+.immersive-tags {
+  margin-bottom: auto;
+  /* Pushes tags to the top */
+  padding-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.immersive-tag {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Big Impact Number/Headline */
+.immersive-impact {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+/* Highlighted Text Gradient */
+.text-gradient-teal {
+  background: linear-gradient(135deg, #fff 30%, #4fd1c5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+}
+
+/* Subtitle / Description */
+.immersive-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  color: #cbd5e0;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  font-weight: 500;
+  opacity: 0.9;
+  border-left: 3px solid #008080;
+  padding-left: 1rem;
+}
+
+/* Footer Action Area */
+.immersive-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.immersive-client {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.immersive-cta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.immersive-card:hover .immersive-cta {
+  background: #008080;
+  padding-right: 1.2rem;
+  /* Make room for moving arrow */
+}
+
+.cta-arrow {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.immersive-card:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .immersive-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .immersive-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .immersive-card {
+    height: 420px;
+  }
+
+  .immersive-impact {
+    font-size: 1.8rem;
   }
 }
