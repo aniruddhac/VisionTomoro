@@ -6929,7 +6929,7 @@ body {
   font-size: 1.1rem;
   line-height: 1.7;
   color: #4a5568;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .code-description {
@@ -7093,7 +7093,7 @@ body {
 
 .code-link-item {
   color: #a5f3fc;
-  font-family: 'Courier New', monospace;
+  font-family: 'Inter', sans-serif;
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.2s;
@@ -7148,5 +7148,43 @@ body {
   .canvas-title,
   .code-title {
     font-size: 2rem;
+  }
+}
+
+/* Gen AI Cards Grid */
+.gen-ai-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.gen-ai-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.gen-ai-card:hover {
+  background-color: rgba(0, 128, 128, 0.2);
+  border-color: #008080;
+  transform: translateY(-2px);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .gen-ai-cards-grid {
+    grid-template-columns: 1fr;
   }
 }
