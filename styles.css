@@ -401,7 +401,7 @@ body {
   position: absolute;
   top: -2rem;
   left: 5%;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', serif;
   font-size: 24rem;
   color: #e6e6fa;
   opacity: 0.6;
@@ -423,7 +423,7 @@ body {
 }
 
 .introduction-title {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Lora', serif;
   font-size: 3rem;
   /* Bold, high-impact typography */
   font-weight: 800;
