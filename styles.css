@@ -599,19 +599,19 @@ body {
 
 /* Individual carousel slide backgrounds */
 .carousel-slide:nth-child(1) {
-  background-image: url('images/road-clear-sky-desert-mountains.jpg');
-}
-
-.carousel-slide:nth-child(2) {
   background-image: url('images/fingertip-activating-ai-agent-on-smartphone-screen.jpg');
 }
 
-.carousel-slide:nth-child(3) {
+.carousel-slide:nth-child(2) {
   background-image: url('images/clouds-on-a-dark-background.jpeg');
 }
 
-.carousel-slide:nth-child(4) {
+.carousel-slide:nth-child(3) {
   background-image: url('images/abstract-digital-binary-code-stream-in-green-on-black.jpg');
+}
+
+.carousel-slide:nth-child(4) {
+  background-image: url('images/modernization.jpg');
 }
 
 .carousel-slide:nth-child(5) {
