@@ -6848,9 +6848,9 @@ body {
 /* --- Left Side: Canvas (Strategy) --- */
 .canvas-pane {
   flex: 1;
-  background-color: #e6e6fa;
-  /* Lavender color matching secondary nav */
-  color: #1a1a2e;
+  background-color: #2d2d2d;
+  /* Dark Gray background */
+  color: #e0e0e0;
   padding: 4rem 6rem;
   display: flex;
   align-items: center;
@@ -6900,7 +6900,7 @@ body {
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
-  color: #1a1a2e;
+  color: #ffffff;
 }
 
 .code-title {
@@ -6931,7 +6931,7 @@ body {
 .canvas-description {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #4a5568;
+  color: #cbd5e0;
   margin-bottom: 1.5rem;
 }
 
@@ -7062,11 +7062,11 @@ body {
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  color: #1a1a2e;
+  color: #cbd5e0;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.75rem 0;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.2s ease;
 }
 
