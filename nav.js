@@ -116,7 +116,7 @@ function loadNavigation() {
               <li><a href="#">Banking and Financial Services</a></li>
               <li><a href="#">Utilities and Energy</a></li>
               <li><a href="#">Travel and Hospitality</a></li>
-              <li><a href="#">Govt. and Public Service</a></li>
+              <li><a href="#">Banking and FinTech</a></li>
             </ul>
           </li>
           <li class="nav-item">
