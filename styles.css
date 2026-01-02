@@ -388,8 +388,8 @@ body {
 /* Introduction Section */
 .introduction-section {
   background-color: #e6e6fa;
-  padding: 1.5rem 20px;
-  /* Reduced vertical padding */
+  padding: 5rem 20px;
+  /* Increased vertical padding to increase section height */
   margin-bottom: 0;
 }
 
