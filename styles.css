@@ -383,12 +383,17 @@ body {
   }
 }
 
+/* Main Navigation, etc... */
+
 /* Introduction Section */
 .introduction-section {
   background-color: #e6e6fa;
-  padding: 32px 20px;
+  padding: 1.5rem 20px;
+  /* Reduced vertical padding */
   margin-bottom: 0;
 }
+
+
 
 .introduction-container {
   max-width: 1200px;
@@ -6848,7 +6853,7 @@ body {
   background-color: #e6e6fa;
   /* Lavender color matching secondary nav */
   color: #1a1a2e;
-  padding: 5rem 6rem;
+  padding: 4rem 6rem;
   display: flex;
   align-items: center;
   position: relative;
@@ -6862,7 +6867,7 @@ body {
   background-color: #1a1a2e;
   /* Dark Navy from header */
   color: #e0e0e0;
-  padding: 5rem 6rem;
+  padding: 4rem 6rem;
   display: flex;
   align-items: center;
   position: relative;
