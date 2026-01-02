@@ -6919,9 +6919,9 @@ body {
 
 .syntax-highlight {
   color: #a5f3fc;
-  font-family: 'Courier New', monospace;
-  background: rgba(165, 243, 252, 0.1);
-  padding: 0 5px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* background removed */
+  padding: 0;
   border-radius: 4px;
 }
 
@@ -7030,6 +7030,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  align-items: flex-start;
+  /* Prevent full width stretch */
 }
 
 /* Links Lists */
