@@ -6827,3 +6827,324 @@ body {
     font-size: 1.8rem;
   }
 }
+
+/* Agentic AI Transformation: Code & Canvas Model (Option 4) */
+.code-canvas-section {
+  width: 100%;
+  position: relative;
+  background-color: #f8f9fa;
+  /* Safe fallback */
+}
+
+.code-canvas-container {
+  display: flex;
+  width: 100%;
+  min-height: 600px;
+}
+
+/* --- Left Side: Canvas (Strategy) --- */
+.canvas-pane {
+  flex: 1;
+  background-color: #e6e6fa;
+  /* Lavender color matching secondary nav */
+  color: #1a1a2e;
+  padding: 5rem 6rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-right: 1px solid #e0e0e0;
+  /* Subtle divider if needed, or rely on contrast */
+}
+
+/* --- Right Side: Code (Engineering) --- */
+.code-pane {
+  flex: 1;
+  background-color: #1a1a2e;
+  /* Dark Navy from header */
+  color: #e0e0e0;
+  padding: 5rem 6rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.pane-content {
+  max-width: 650px;
+  width: 100%;
+}
+
+/* Typography & Labels */
+.pane-label {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #008080;
+  /* Teal accent */
+  display: inline-block;
+}
+
+.label-code {
+  color: #a5f3fc;
+  /* Cyan accent for code side */
+  font-family: 'Courier New', monospace;
+}
+
+.canvas-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #1a1a2e;
+}
+
+.code-title {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.code-subtitle {
+  font-size: 1.2rem;
+  color: #008080;
+  /* Teal */
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.syntax-highlight {
+  color: #a5f3fc;
+  font-family: 'Courier New', monospace;
+  background: rgba(165, 243, 252, 0.1);
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.canvas-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4a5568;
+  margin-bottom: 3rem;
+}
+
+.code-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #cbd5e0;
+  /* Lighter grey for dark bg */
+  margin-bottom: 2.5rem;
+}
+
+/* --- Terminal Block --- */
+.terminal-block {
+  background-color: #0d0d1a;
+  /* Even darker shade */
+  border-radius: 8px;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  margin-bottom: 3rem;
+  font-family: 'Courier New', monospace;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.red {
+  background-color: #ff5f56;
+}
+
+.yellow {
+  background-color: #ffbd2e;
+}
+
+.green {
+  background-color: #27c93f;
+}
+
+.terminal-title {
+  margin-left: 10px;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+.terminal-body {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.code-line {
+  display: block;
+  color: #abb2bf;
+  margin-bottom: 4px;
+}
+
+.code-indent {
+  display: block;
+  margin-left: 1.5rem;
+  color: #98c379;
+}
+
+/* Green string */
+.c-keyword {
+  color: #c678dd;
+}
+
+/* Purple */
+.c-var {
+  color: #e5c07b;
+}
+
+/* Yellow */
+.c-string {
+  color: #98c379;
+}
+
+.c-comment {
+  color: #5c6370;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* --- Action Areas --- */
+.canvas-actions,
+.code-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Links Lists */
+.links-header {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.clean-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* 2 Col Grid */
+  gap: 1rem;
+}
+
+.clean-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #1a1a2e;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+}
+
+.clean-link:hover {
+  color: #008080;
+  border-bottom-color: #008080;
+  padding-right: 10px;
+  /* Slide effect */
+}
+
+.arrow-icon {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2px;
+  transition: transform 0.2s;
+}
+
+.clean-link:hover .arrow-icon {
+  transform: translateX(4px);
+}
+
+.code-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.code-link-item {
+  color: #a5f3fc;
+  font-family: 'Courier New', monospace;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.code-link-item:hover {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(165, 243, 252, 0.4);
+  transform: translateX(6px);
+}
+
+/* Button Variants */
+.btn-outline-code {
+  display: inline-flex;
+  width: fit-content;
+  padding: 0.7rem 2rem;
+  border: 1px solid #008080;
+  color: #008080;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.btn-outline-code:hover {
+  background-color: rgba(0, 128, 128, 0.1);
+  box-shadow: 0 0 15px rgba(0, 128, 128, 0.3);
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .code-canvas-container {
+    flex-direction: column;
+  }
+
+  .clean-link-list {
+    grid-template-columns: 1fr;
+  }
+
+  .canvas-pane,
+  .code-pane {
+    padding: 4rem 2rem;
+  }
+
+  .pane-content {
+    max-width: 100%;
+  }
+
+  .canvas-title,
+  .code-title {
+    font-size: 2rem;
+  }
+}

@@ -103,8 +103,6 @@ function loadNavigation() {
                   <li><a href="#">Product and Platforms</a></li>
                   <li><a href="#">Enterprise Architecture</a></li>
                   <li><a href="emerging-technologies.html">Emerging Technologies</a></li>
-                  <li><a href="web-cloud-native-intelligent-apps.html">Web, Cloud Native and Intelligent Apps</a></li>
-                  <li><a href="ent-mobility-and-connected-ent.html">Enterprise Mobility and Connected Enterprise</a></li>
                 </ul>
               </div>
             </div>
