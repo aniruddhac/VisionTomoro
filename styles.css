@@ -149,11 +149,6 @@ body {
 /* Override hover styles on mobile for better UX */
 @media (max-width: 768px) {
 
-  /* Remove hover styles on mobile to prevent conflicts with JavaScript */
-  .nav-item:hover .dropdown {
-    /* No hover styles on mobile - let JavaScript handle it */
-  }
-
   /* Ensure dropdowns are hidden by default on mobile */
   .nav-item:not(.active) .dropdown {
     display: none !important;
@@ -428,7 +423,10 @@ body {
   /* Bold, high-impact typography */
   font-weight: 800;
   font-style: italic;
-  color: #1a1a2e;
+  background: linear-gradient(135deg, #8F63F1 0%, #008080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin: 0 0 2rem 0;
   line-height: 1.1;
   letter-spacing: -0.01em;
@@ -6213,9 +6211,7 @@ body {
   .evolution-card .card-icon {
     font-size: 2rem;
     width: 50px;
-    height: 50px;
   }
-}
 }
 
 /* GenEI Image Responsive Styles */
@@ -6234,7 +6230,6 @@ body {
     width: 100%;
     /* Full width on mobile */
   }
-}
 }
 
 /* Success Stories Page Styles */
