@@ -384,7 +384,7 @@ body {
 .introduction-section {
   background-color: #fdfbff;
   /* Slightly warmer white/lavender for paper feel */
-  padding: 8rem 20px;
+  padding: 5.6rem 20px;
   margin-bottom: 0;
   position: relative;
   overflow: hidden;
@@ -777,7 +777,7 @@ body {
   transition: all 0.3s ease;
   margin: 0 8px;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 12px;
   display: flex;
