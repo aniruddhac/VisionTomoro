@@ -3,7 +3,7 @@ function insertContactSection() {
   if (window.location.pathname.includes('get-in-touch.html')) {
     return;
   }
-  
+
   const contactSectionHTML = `
     <section class="contact-section">
       <div class="container">
@@ -14,13 +14,13 @@ function insertContactSection() {
           <div class="contact-content">
             <h2>Ready to transform your business?</h2>
             <p>Traditional consulting moves at the speed of slides. We move at the speed of code. Let’s architect your AI future and turn your technical debt into a competitive engine together.</p>
-            <a href="get-in-touch.html" class="btn-secondary">Build the Future Now</a>
+            <a href="get-in-touch.html" class="btn-secondary">Start a strategic discussion</a>
           </div>
         </div>
       </div>
     </section>
   `;
-  
+
   // Insert contact section before footer
   const footer = document.querySelector('.footer');
   if (footer) {
