@@ -24,7 +24,7 @@ function loadNavigation() {
                 <ul class="dropdown-list">
                   <li><a href="agentic-ai.html">Agentic AI and Autonomous Enterprise</a></li>
                   <li><a href="generative-ai.html">Enterprise Generative AI</a></li>
-                  <li><a href="#">Responsible AI</a></li>
+                  <li><a href="responsible-ai.html">Responsible AI</a></li>
                   <li><a href="vibe-coding-agentic-devops.html">Vibe Coding & Agentic DevOps</a></li>
                   <li><a href="#">ML and Data Science</a></li>
                   <li><a href="#">AI Infrastructure</a></li>
