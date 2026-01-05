@@ -2524,6 +2524,85 @@ body {
   width: 100%;
 }
 
+/* Benefits and Challenges Section */
+.benefits-challenges-section {
+  padding: 4rem 0;
+  background-color: #fdfbff;
+}
+
+.bc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.bc-card {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.bc-card:hover {
+  transform: translateY(-5px);
+}
+
+.bc-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.benefits-title {
+  color: #008080;
+}
+
+.challenges-title {
+  color: #c53030;
+}
+
+.bc-list {
+  list-style: none;
+  padding: 0;
+}
+
+.bc-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  font-size: 0.95rem;
+  color: #4a5568;
+}
+
+.benefits-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #008080;
+  font-weight: bold;
+}
+
+.challenges-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #c53030;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .bc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* Framework Grid & Cards */
 .framework-card {
   background: #fff;
