@@ -25,7 +25,7 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: #1a1a2e;
+  background-color: #181717;
   color: #fff;
   padding: 0.25rem 0;
   position: sticky;
@@ -114,7 +114,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #1a1a2e;
+  background-color: #181717;
   /* Match header color */
   min-width: 220px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -166,7 +166,7 @@ body {
     opacity: 1 !important;
     visibility: visible !important;
     display: none !important;
-    background-color: #1a1a2e !important;
+    background-color: #181717 !important;
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     z-index: 1000 !important;
@@ -192,7 +192,7 @@ body {
     opacity: 1 !important;
     visibility: visible !important;
     display: none !important;
-    background-color: #1a1a2e !important;
+    background-color: #181717 !important;
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
     z-index: 1000 !important;
@@ -247,7 +247,7 @@ body {
     padding: 1rem !important;
     width: 100% !important;
     flex: none !important;
-    background-color: #1a1a2e !important;
+    background-color: #181717 !important;
   }
 
   .dropdown-column:last-child {
@@ -258,7 +258,7 @@ body {
     margin-bottom: 1rem !important;
     padding-bottom: 0.5rem !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-    background-color: #1a1a2e !important;
+    background-color: #181717 !important;
   }
 
   .dropdown-column-header span {
@@ -418,11 +418,10 @@ body {
 }
 
 .introduction-title {
-  font-family: 'Lora', serif;
-  font-size: 3rem;
+  font-family: 'Chivo Mono', monospace;
+  font-size: 2.4rem;
   /* Bold, high-impact typography */
   font-weight: 800;
-  font-style: italic;
   background: linear-gradient(135deg, #8F63F1 0%, #008080 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -460,7 +459,8 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  font-weight: 600;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 400;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -478,7 +478,8 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  font-weight: 600;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 400;
   border: 2px solid #fff;
   transition: all 0.3s ease;
   margin-left: 1rem;
@@ -807,7 +808,8 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  font-weight: 600;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 400;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -831,7 +833,8 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 50px;
-  font-weight: 600;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 400;
   border: 2px solid #fff;
   transition: all 0.3s ease;
   margin-left: 1rem;
@@ -1015,7 +1018,8 @@ body {
   color: #008080;
   text-decoration: none;
   border-radius: 25px;
-  font-weight: 600;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 400;
   transition: all 0.3s ease;
   margin-top: auto;
 }
@@ -1392,6 +1396,8 @@ body {
   border-radius: 25px;
   box-shadow: 0 4px 15px rgba(0, 128, 128, 0.3);
   transition: all 0.3s ease;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 400;
 }
 
 .cta-service-link:hover {
@@ -3477,7 +3483,8 @@ body {
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
-  font-weight: 600;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 400;
   font-size: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 128, 128, 0.3);
@@ -4249,7 +4256,7 @@ body {
     width: 30px;
     height: 30px;
     font-size: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Inter', sans-serif;
   }
 
   .carousel-dot.active {
@@ -5793,7 +5800,8 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 50px;
-  font-weight: 500;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 400;
   font-size: 0.9rem;
   transition: all 0.3s ease;
   border: 2px solid transparent;
@@ -6790,7 +6798,7 @@ body {
 /* --- Right Side: Code (Engineering) --- */
 .code-pane {
   flex: 1;
-  background-color: #1a1a2e;
+  background-color: #181717;
   /* Dark Navy from header */
   color: #e0e0e0;
   padding: 4rem 6rem;
@@ -7044,8 +7052,8 @@ body {
   border: 1px solid #008080;
   color: #008080;
   text-decoration: none;
-  font-family: 'Courier New', monospace;
-  font-weight: 700;
+  font-family: 'Chivo Mono', monospace;
+  font-weight: 400;
   border-radius: 4px;
   transition: all 0.3s;
 }
