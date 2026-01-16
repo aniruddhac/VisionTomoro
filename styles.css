@@ -1498,6 +1498,7 @@ body {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+  font-family: 'Chivo Mono', monospace;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
@@ -5040,6 +5041,7 @@ body {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.5px;
+  font-family: 'Chivo Mono', monospace;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
 }
@@ -6716,7 +6718,7 @@ body {
 }
 
 .immersive-cta {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Chivo Mono', monospace;
   font-weight: 700;
   color: #fff;
   display: flex;
