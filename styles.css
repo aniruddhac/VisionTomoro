@@ -461,6 +461,8 @@ body {
   border-radius: 50px;
   font-family: 'Chivo Mono', monospace;
   font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.8rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -481,6 +483,8 @@ body {
   font-family: 'Chivo Mono', monospace;
   font-weight: 400;
   border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
   transition: all 0.3s ease;
   margin-left: 1rem;
 }
@@ -810,6 +814,8 @@ body {
   border-radius: 50px;
   font-family: 'Chivo Mono', monospace;
   font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.8rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -836,6 +842,8 @@ body {
   font-family: 'Chivo Mono', monospace;
   font-weight: 400;
   border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: 0.8rem;
   transition: all 0.3s ease;
   margin-left: 1rem;
 }
@@ -1570,7 +1578,8 @@ body {
 
 .experience-actions .btn-secondary {
   padding: 0.43rem 1.5rem;
-  font-size: 0.9rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
   border-radius: 25px;
   transition: all 0.3s ease;
 }

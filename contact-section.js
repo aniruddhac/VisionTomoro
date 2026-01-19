@@ -14,7 +14,7 @@ function insertContactSection() {
           <div class="contact-content">
             <h2>Ready to transform your business?</h2>
             <p>Traditional consulting moves at the speed of slides. We move at the speed of code. Let’s architect your AI future and turn your technical debt into a competitive engine together.</p>
-            <a href="get-in-touch.html" class="btn-secondary">Start a strategic discussion</a>
+            <a href="get-in-touch.html" class="btn-secondary">Start a strategy conversation</a>
           </div>
         </div>
       </div>
