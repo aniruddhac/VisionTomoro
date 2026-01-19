@@ -422,6 +422,7 @@ body {
   font-size: 2.4rem;
   /* Bold, high-impact typography */
   font-weight: 800;
+  text-transform: uppercase;
   background: linear-gradient(135deg, #8F63F1 0%, #008080 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
