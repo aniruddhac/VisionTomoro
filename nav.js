@@ -123,7 +123,7 @@ function loadNavigation() {
             <a href="what-we-think.html" class="nav-link">Insights</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link has-dropdown">Who we are<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="#" class="nav-link has-dropdown">Company<svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <ul class="dropdown">
               <li><a href="success-stories.html">Success Stories</a></li>
               <li><a href="our-story.html">Our Story</a></li>

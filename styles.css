@@ -557,8 +557,8 @@ body {
 }
 
 .secondary-nav-link:hover {
-  background-color: #d8bfd8;
-  /* Darker lavender color for hover */
+  background-color: #008080;
+  /* Match primary CTA teal hover */
   color: #fff;
   border-bottom-color: #fff;
 }
@@ -3519,6 +3519,7 @@ body {
   font-size: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 128, 128, 0.3);
+  text-transform: uppercase;
   border: none;
   cursor: pointer;
 }
