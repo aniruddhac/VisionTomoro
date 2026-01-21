@@ -6598,6 +6598,12 @@ body {
   }
 }
 
+.neo-edge-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 /* =========================================
    Immersive Success Stories (Thoughtworks Style)
    ========================================= */
@@ -6752,6 +6758,7 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
+  text-decoration: none;
   display: flex;
   align-items: center;
   font-size: 0.8rem;
@@ -6759,22 +6766,29 @@ body {
   background: rgba(255, 255, 255, 0.1);
   padding: 0.5rem 1rem;
   border-radius: 20px;
+  width: fit-content;
 }
 
-.immersive-card:hover .immersive-cta {
+.immersive-cta:hover,
+.immersive-card:hover .immersive-cta,
+.neo-edge-card:hover .immersive-cta {
   background: #008080;
   padding-right: 1.2rem;
-  /* Make room for moving arrow */
+  color: #fff;
 }
+
+.immersive-cta:hover .cta-arrow,
+.immersive-card:hover .cta-arrow,
+.neo-edge-card:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+
 
 .cta-arrow {
   margin-left: 0.5rem;
   transition: transform 0.3s ease;
   font-size: 1.1rem;
-}
-
-.immersive-card:hover .cta-arrow {
-  transform: translateX(4px);
 }
 
 /* Responsive Breakpoints */
