@@ -7,11 +7,11 @@
 /* Ensure Inter font is used for body text with high specificity */
 html,
 body {
-  font-family: 'Inter', Arial, 'Segoe UI', sans-serif;
+  font-family: 'Space Grotesk', Arial, 'Segoe UI', sans-serif;
 }
 
 body {
-  font-family: 'Inter', Arial, 'Segoe UI', sans-serif;
+  font-family: 'Space Grotesk', Arial, 'Segoe UI', sans-serif;
   line-height: 1.6;
   color: #000;
   background-color: #f8f9fa;
@@ -603,7 +603,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 1;
   pointer-events: none;
 }
@@ -620,33 +620,47 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #1a1a2e;
+  /* Dark base color to maintain mood */
+}
+
+.carousel-slide::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0.7;
+  /* 30% transparency on the image */
+  z-index: 0;
 }
 
-/* Individual carousel slide backgrounds */
-.carousel-slide:nth-child(1) {
+/* Individual carousel slide backgrounds moved to ::after */
+.carousel-slide:nth-child(1)::after {
   background-image: url('images/fingertip-activating-ai-agent-on-smartphone-screen.jpg');
 }
 
-.carousel-slide:nth-child(2) {
+.carousel-slide:nth-child(2)::after {
   background-image: url('images/clouds-on-a-dark-background.jpeg');
 }
 
-.carousel-slide:nth-child(3) {
+.carousel-slide:nth-child(3)::after {
   background-image: url('images/abstract-digital-binary-code-stream-in-green-on-black.jpg');
 }
 
-.carousel-slide:nth-child(4) {
+.carousel-slide:nth-child(4)::after {
   background-image: url('images/modernization.jpg');
 }
 
-.carousel-slide:nth-child(5) {
+.carousel-slide:nth-child(5)::after {
   background-image: url('images/home-office-workspace-at-night-with-computer-screen.jpg');
 }
 
-.carousel-slide:nth-child(6) {
+.carousel-slide:nth-child(6)::after {
   background-image: url('images/magnifying-glass-focuses-on-a-circuit-board.jpg');
 }
 
@@ -662,7 +676,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 1;
   pointer-events: none;
 }
@@ -693,15 +707,17 @@ body {
 .hero-content h2 {
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   line-height: 1.2;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content p {
   font-size: 1.15rem;
   margin-bottom: 2rem;
   opacity: 0.9;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-indicators {
@@ -765,7 +781,7 @@ body {
   transition: all 0.3s ease;
   margin: 0 8px;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
   font-size: 12px;
   display: flex;
@@ -884,7 +900,7 @@ body {
   text-align: center;
   font-size: 1.6rem;
   margin-bottom: 3rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background: linear-gradient(90deg, #008080 0%, #8F63F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -893,7 +909,7 @@ body {
 }
 
 .section-title.teal-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1001,7 +1017,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .service-card-front p {
@@ -1015,7 +1031,7 @@ body {
   margin-bottom: 1.5rem;
   color: #fff;
   font-weight: 600;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .service-card-back ul {
@@ -1092,7 +1108,7 @@ body {
 }
 
 .cloud-continuum-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1126,7 +1142,7 @@ body {
   border-radius: 6px;
   text-align: center;
   flex-shrink: 0;
-  font-family: 'Inter', Arial, 'Segoe UI', sans-serif;
+  font-family: 'Space Grotesk', Arial, 'Segoe UI', sans-serif;
 }
 
 .cloud-tab-btn:hover {
@@ -1364,7 +1380,7 @@ body {
 .ai-transformation-section .section-title {
   font-size: 2.4rem;
   margin-bottom: 1rem;
-  font-family: 'Plus Jakarta Sans', 'Crimson Text', 'Garamond', 'Playfair Display', sans-serif;
+  font-family: 'Space Grotesk', 'Crimson Text', 'Garamond', 'Playfair Display', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   text-align: left;
@@ -1382,7 +1398,7 @@ body {
   margin-bottom: 2rem;
   text-align: left;
   position: relative;
-  font-family: 'Inter', Arial, 'Segoe UI', sans-serif;
+  font-family: 'Space Grotesk', Arial, 'Segoe UI', sans-serif;
 }
 
 .ai-transformation-description::after {
@@ -1410,7 +1426,7 @@ body {
   transition: all 0.3s ease;
   box-shadow: none;
   border: none;
-  font-family: 'Inter', Arial, 'Segoe UI', sans-serif;
+  font-family: 'Space Grotesk', Arial, 'Segoe UI', sans-serif;
 }
 
 .ai-service-link:hover {
@@ -1480,7 +1496,7 @@ body {
 }
 
 .experience-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background: linear-gradient(135deg, #008080 0%, #8F63F1 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1664,7 +1680,7 @@ body {
 }
 
 .multi-agent-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   color: #000;
   margin-bottom: 2rem;
 }
@@ -1778,7 +1794,7 @@ body {
   margin-bottom: 1.5rem;
   font-weight: 700;
   line-height: 1.2;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .hero-content-centered p {
@@ -1804,7 +1820,7 @@ body {
   color: #008080;
   margin-bottom: 0.5rem;
   font-weight: 700;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .stat-item p {
@@ -1853,7 +1869,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .contact-info-card p {
@@ -1892,7 +1908,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .contact-intro p {
@@ -1936,7 +1952,7 @@ body {
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   letter-spacing: -0.02em;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .contact-form {
@@ -1969,7 +1985,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 0.9rem;
-  font-family: 'Inter', Arial, 'Segoe UI', sans-serif;
+  font-family: 'Space Grotesk', Arial, 'Segoe UI', sans-serif;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -2501,7 +2517,7 @@ body {
 .hero-content-right h1 {
   font-size: 2.4rem;
   margin-bottom: 3.5rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 800;
   line-height: 1.2;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -2510,7 +2526,7 @@ body {
 .page-hero h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -2589,7 +2605,7 @@ body {
 .bc-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -2692,7 +2708,7 @@ body {
   font-size: 1.15rem;
   color: #fff;
   margin-bottom: 1rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   line-height: 1.3;
 }
@@ -2714,12 +2730,12 @@ body {
   color: #1a1a2e;
   font-weight: 600;
   transition: color 0.3s ease;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .offering-card:hover h3 {
   color: #008080;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .offering-card p {
@@ -2764,7 +2780,7 @@ body {
 }
 
 .hyperscaler-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   color: #1a1a2e;
 }
 
@@ -2942,7 +2958,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .tech-content p {
@@ -2998,7 +3014,7 @@ body {
     margin-bottom: 1rem;
     color: #1a1a2e;
     font-weight: 600;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
   }
 
   .hyperscaler-card p {
@@ -3087,7 +3103,7 @@ body {
 }
 
 .value-prop-content .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   text-align: left;
 }
 
@@ -3163,7 +3179,7 @@ body {
   margin: 0;
   position: relative;
   z-index: 1;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .engagement-card p {
@@ -3177,7 +3193,7 @@ body {
 
 .engagement-card:hover h3 {
   color: #008080;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .engagement-card:hover p {
@@ -3197,7 +3213,7 @@ body {
 }
 
 .signature-strength-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   color: #fff !important;
   background: none !important;
   -webkit-background-clip: unset !important;
@@ -3341,12 +3357,12 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .bento-card:hover h3 {
   color: #ffffff;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .bento-card p {
@@ -3761,7 +3777,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-weight: 700;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .glass-card p {
@@ -3882,7 +3898,7 @@ body {
   margin-bottom: 0.5rem;
   color: #1a1a2e;
   font-weight: 600;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .leader-title {
@@ -3976,7 +3992,7 @@ body {
   margin-bottom: 0.3rem;
   font-weight: 700;
   color: #1a1a2e;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .leader-designation {
@@ -4033,7 +4049,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .leader-section ul {
@@ -4288,7 +4304,7 @@ body {
     width: 30px;
     height: 30px;
     font-size: 10px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
   }
 
   .carousel-dot.active {
@@ -4549,7 +4565,7 @@ body {
 }
 
 .pipeline-section .section-title {
-  font-family: 'Plus Jakarta Sans', 'Fira Code', 'Courier New', sans-serif;
+  font-family: 'Space Grotesk', 'Fira Code', 'Courier New', sans-serif;
   color: #fff;
   background: none;
   -webkit-text-fill-color: initial;
@@ -4643,7 +4659,7 @@ body {
   position: relative;
   z-index: 3;
   transition: all 0.3s ease;
-  font-family: 'Inter', monospace;
+  font-family: 'Space Grotesk', monospace;
   /* Fallback to monospace feel */
 }
 
@@ -4654,7 +4670,7 @@ body {
 }
 
 .pipeline-card h3 {
-  font-family: 'Plus Jakarta Sans', 'Fira Code', 'Courier New', monospace;
+  font-family: 'Space Grotesk', 'Fira Code', 'Courier New', monospace;
   font-size: 1.1rem;
   color: #58a6ff;
   /* GitHub Blue */
@@ -4904,7 +4920,7 @@ body {
   font-weight: 700;
   margin-bottom: 1rem;
   line-height: 1.3;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .contact-content p {
@@ -4959,7 +4975,7 @@ body {
 
   .contact-content h2 {
     font-size: 1.8rem;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
   }
 
   .contact-content p {
@@ -4985,7 +5001,7 @@ body {
 }
 
 .contact-form-wrapper .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -5491,7 +5507,7 @@ body {
 }
 
 .ai-strategy-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -5521,7 +5537,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .ai-strategy-item p {
@@ -5537,7 +5553,7 @@ body {
 }
 
 .ai-readiness-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -5567,7 +5583,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .ai-readiness-item p {
@@ -5583,7 +5599,7 @@ body {
 }
 
 .ai-advisory-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -5613,7 +5629,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .ai-advisory-item p {
@@ -5629,7 +5645,7 @@ body {
 }
 
 .technology-experience-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -5659,7 +5675,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 600;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .technology-item p {
@@ -5675,7 +5691,7 @@ body {
 }
 
 .consulting-content-section .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -5731,7 +5747,7 @@ body {
 .perspective-col.perspective-gradient .perspective-content h3 {
   color: #fff;
   border-bottom-color: rgba(255, 255, 255, 0.2);
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .perspective-col:hover {
@@ -5761,7 +5777,7 @@ body {
   border-bottom: 2px solid #f0f0f0;
   padding-bottom: 0.5rem;
   display: inline-block;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .perspective-content ul {
@@ -6046,7 +6062,7 @@ body {
   margin: 0;
   color: #1a1a2e;
   font-weight: 700;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .evolution-card .card-content ul {
@@ -6239,7 +6255,7 @@ body {
   margin-bottom: 0.5rem;
   color: #1a1a2e;
   font-weight: 700;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .story-industry {
@@ -6287,7 +6303,7 @@ body {
 .contact-cta-content h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .contact-cta-content p {
@@ -6304,7 +6320,7 @@ body {
   text-decoration: none;
   border-radius: 50px;
   font-weight: 700;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -6378,7 +6394,7 @@ body {
   margin-bottom: 0.5rem;
   color: #1a1a2e;
   font-weight: 700;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .success-story-industry {
@@ -6417,7 +6433,7 @@ body {
   margin-bottom: 1rem;
   color: #1a1a2e;
   font-weight: 700;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   border-bottom: 2px solid #f0f0f0;
   padding-bottom: 0.5rem;
 }
@@ -6706,7 +6722,7 @@ body {
 
 /* Big Impact Number/Headline */
 .immersive-impact {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 2.2rem;
   font-weight: 800;
   line-height: 1.1;
@@ -6726,7 +6742,7 @@ body {
 
 /* Subtitle / Description */
 .immersive-subtitle {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1rem;
   color: #cbd5e0;
   margin-bottom: 1.5rem;
@@ -6880,7 +6896,7 @@ body {
 }
 
 .canvas-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
@@ -6889,7 +6905,7 @@ body {
 }
 
 .code-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
@@ -6907,7 +6923,7 @@ body {
 
 .syntax-highlight {
   color: #a5f3fc;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   /* background removed */
   padding: 0;
   border-radius: 4px;
@@ -7084,7 +7100,7 @@ body {
 
 .code-link-item {
   color: #a5f3fc;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   text-decoration: none;
   font-size: 1rem;
   transition: all 0.2s;
@@ -7155,7 +7171,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.75rem 1rem;
   border-radius: 6px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
   color: #e0e0e0;
