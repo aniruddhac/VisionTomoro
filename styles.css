@@ -419,7 +419,7 @@ body {
 
 .introduction-title {
   font-family: 'Chivo Mono', monospace;
-  font-size: 2.4rem;
+  font-size: 3.36rem;
   /* Non-bold, high-impact typography */
   font-weight: 400;
   text-transform: uppercase;
@@ -6595,8 +6595,8 @@ body {
   }
 
   .introduction-title {
-    font-size: 1.4rem;
-    /* 30% smaller than 2rem */
+    font-size: 1.96rem;
+    /* 40% larger than 1.4rem */
   }
 
   .introduction-text {
