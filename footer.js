@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="footer-links">
             <a href="our-story.html">About VisionTomoro</a>
             <span class="footer-separator">|</span>
-            <a href="our-leaders.html">About our leaders</a>
-            <span class="footer-separator">|</span>
+
             <a href="get-in-touch.html">Contact Us</a>
             <span class="footer-separator">|</span>
             <a href="sitemap.html">Sitemap</a>
